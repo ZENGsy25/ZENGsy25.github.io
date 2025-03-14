@@ -1,211 +1,106 @@
+/*
+ * @Author: ZENGsy25 510064377@qq.com
+ * @Date: 2023-12-19 15:09:10
+ * @LastEditors: ZENGsy25 510064377@qq.com
+ * @LastEditTime: 2024-04-11 13:34:20
+ * @FilePath: \线上_blog\docs\.vuepress\config.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 module.exports = {
-  title: "NorthUnicorn",
+  title: "Saturn-blog",
   base: "/",
   themeConfig: {
     editLinkText: "编辑此页",
     lastUpdated: "上次更新",
-    nav: [{
-      text: "courseware",
-      link: "/courseware/"
-    },{
-      text: "front",
-      link: "/front/"
-    },
-    {
-      text: "back",
-      link: "/houduan/"
-    },
-    {
-      text: "devOps",
-      link: "/devOps/"
-    },
-    {
-      text: "interview",
-      link: "/interview/"
-    },
-    {
-      text: "article",
-      link: "/article/"
-    }
-    ,
-    {
-      text: "northui",
-      link: "/northui/"
-    },
-    {
-      text: "GitHub",
-      link: "https://github.com/xiaoqi7777"
-    },
-    {
-      text: "about",
-      link: "/about/"
-    }
+    nav: [
+      {
+        text: "前端",
+        link: "/front/",
+      },
+      {
+        text: "基础",
+        link: "/base/",
+      },
     ],
     sidebar: {
-      "/article/": [{
-        title: "article",
-        collapsable: false,
-        children: [
-          "webpack5",
-          "webpack",
-          "module",
-          "vueAnalysis",
-          "vueN",
-          "promise",
-          "wx",
-          "frontModle",
-          "vuePlugin",
-          "jwtPrinciple",
-          "routerAuth",
-          "statusCode",
-          "koa_express",
-          "useLibrary",
-          "reg",
-          "deepWebpack",
-          "ts",
-          "wqianduan",
-          "gulp",
-          "babel",
-        ]
-      },{
-        title:'react',
-        collapsable:false,
-        children:[
-          "react",
-          "redux",
-          "reactRouter",
-          "dva",
-          "hook",
-          "reactSource",
-          "reactSource16",
-          "fiber",
-          "reactOptimization"
-        ]
-      },{
-        title:'vue',
-        collapsable:false,
-        children:[
-          "vueSource",
-        ]
-      },{
-        title:'axios',
-        collapsable:false,
-        children:[
-          "axios",
-        ]
-      },{
-        title:'upload',
-        collapsable:false,
-        children:[
-          "upload",
-        ]
-      },{
-        title:'binary',
-        collapsable:false,
-        children:[
-          "binary",
-        ]
-      },{
-        title:'http',
-        collapsable:false,
-        children:[
-          "http",
-        ]
-      }
-    ],
-      "/front/": [{
-        title: 'front',
-        collapsable: false,
-        children: [
-          "css",
-          "js",
-          "react",
-          "vue",
-          "vuepress",
-          "phone",
-          "webpack",
-          "video"
-        ]
-      },{
-        title: 'js',
-        collapsable: false,
-        children: [
-          "jsBase",
-        ]
-      }],
-      "/houduan/": [{
-        title: "houduan",
-        collapsable: false,
-        children: [
-          "node",
-          "ios",
-          "mongodb",
-          "egg",
-          "mock",
-          "wx",
-          "koa",
-          "http",
-          "mysql"
-        ]
-      }],
-      "/devOps/": [{
-        title: "devOps",
-        collapsable: false,
-        children: [
-          "git",
-          "nginx",
-          "linux",
-          "docker",
-          "jenkins",
-          "vscode",
-          "jest",
-          "k8s",
-          "cicd"
-        ]
-      }],
-      "/northui/": [{
-        title: "northui",
-        collapsable: false,
-        children: [
-          "base",
-        ]
-      }],
-      "/courseware/": [{
-        title: "courseware",
-        collapsable: false,
-        children: [
-          "react",
-        ]
-      }],
-      "/interview/": [{
-        title: "interview",
-        collapsable: false,
-        children: [
-          "design",
-          "algorithm",
-          "subject",
-          "leetcode",
-          "everyWrite"
-        ]
-      },{
-        title:'Base',
-        collapsable:false,
-        children:[
-          "cssBase",
-          "jsBase",
-        ]
-      },{
-        title:'interview',
-        collapsable:false,
-        children:[
-          "interviewBase",
-          "interviewJs",
-          "interviewVue",
-          "interviewWebpack",
-          "status",
-          "suanfa"
-        ]
-      }]
-    }
-  }
+      "/base/": [
+        {
+          title: "js",
+          children: ["js", "ask"],
+        },
+      ],
+      "/front/": [
+        {
+          title: "CSS基础",
+          collapsable: false,
+          children: ["css"],
+        },
+        {
+          title: "js",
+          collapsable: false,
+          children: ["jsBase"],
+        },
+        {
+          title: "学习",
+          collapsable: false,
+          children: ["study"],
+        },
+        {
+          title: "JS笔记",
+          collapsable: false,
+          children: ["JSbase1"],
+        },
+        {
+          title: "语言基础笔记",
+          collapsable: false,
+          children: ["LANbase"],
+        },
+        {
+          title: "GIT笔记",
+          collapsable: false,
+          children: ["GIT"],
+        },
+        {
+          title: "练习笔记",
+          collapsable: false,
+          children: ["STnote"],
+        },
+        {
+          title: "REACT",
+          collapsable: false,
+          children: ["REACT-qidong"],
+        },
+        {
+          title: "网络请求",
+          collapsable: false,
+          children: ["XHRHttpRequest"],
+        },
+        {
+          title: "REACT全家桶",
+          collapsable: false,
+          children: ["ReactNote", "React-2022", "REACT-ketang"],
+        },
+        {
+          title: "Vue 基础",
+          collapsable: false,
+          children: ["VueNew"],
+        },
+        {
+          title: "Vue3 基础",
+          collapsable: false,
+          children: ["vue3"],
+        },
+        {
+          title: "Ant Design",
+          collapsable: false,
+          children: ["Antd"],
+        },
+        {
+          title: "Type Script",
+          collapsable: false,
+          children: ["TypeScript"],
+        },
+      ],
+    },
+  },
 };
