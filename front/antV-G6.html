@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>antV-G6 学习汇总 | Saturn-blog</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.9854472c.css" as="style"><link rel="preload" href="/assets/js/app.f524855a.js" as="script"><link rel="preload" href="/assets/js/25.437d3a9a.js" as="script"><link rel="prefetch" href="/assets/js/10.847b9178.js"><link rel="prefetch" href="/assets/js/11.744564c2.js"><link rel="prefetch" href="/assets/js/12.3437f46d.js"><link rel="prefetch" href="/assets/js/13.582b72f3.js"><link rel="prefetch" href="/assets/js/14.bec1bbe7.js"><link rel="prefetch" href="/assets/js/15.c2aeffff.js"><link rel="prefetch" href="/assets/js/16.920d5c52.js"><link rel="prefetch" href="/assets/js/17.c1491576.js"><link rel="prefetch" href="/assets/js/18.83f2684f.js"><link rel="prefetch" href="/assets/js/19.afc8e3c9.js"><link rel="prefetch" href="/assets/js/2.d8f505d4.js"><link rel="prefetch" href="/assets/js/20.69256c79.js"><link rel="prefetch" href="/assets/js/21.7150f633.js"><link rel="prefetch" href="/assets/js/22.fc29b1d5.js"><link rel="prefetch" href="/assets/js/23.27a14090.js"><link rel="prefetch" href="/assets/js/24.bef68b2d.js"><link rel="prefetch" href="/assets/js/26.208ca090.js"><link rel="prefetch" href="/assets/js/27.7eb5005f.js"><link rel="prefetch" href="/assets/js/28.b62b2cf4.js"><link rel="prefetch" href="/assets/js/29.815ad91e.js"><link rel="prefetch" href="/assets/js/3.70319971.js"><link rel="prefetch" href="/assets/js/30.d368f503.js"><link rel="prefetch" href="/assets/js/31.23a13955.js"><link rel="prefetch" href="/assets/js/32.fc384217.js"><link rel="prefetch" href="/assets/js/33.9094b407.js"><link rel="prefetch" href="/assets/js/34.b7df0319.js"><link rel="prefetch" href="/assets/js/35.d6e443d9.js"><link rel="prefetch" href="/assets/js/36.abf2d07e.js"><link rel="prefetch" href="/assets/js/37.ce08d1e9.js"><link rel="prefetch" href="/assets/js/38.b70c61b8.js"><link rel="prefetch" href="/assets/js/39.2867ffd2.js"><link rel="prefetch" href="/assets/js/4.a30e8576.js"><link rel="prefetch" href="/assets/js/5.2874a89d.js"><link rel="prefetch" href="/assets/js/6.972ad5ff.js"><link rel="prefetch" href="/assets/js/7.80bcb09b.js"><link rel="prefetch" href="/assets/js/8.3f5d066e.js"><link rel="prefetch" href="/assets/js/9.5642a373.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9854472c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Saturn-blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/base/" class="nav-link">基础</a></div><div class="nav-item"><a href="/front/" class="nav-link router-link-active">前端</a></div><div class="nav-item"><a href="/thirdPartyLibraries/" class="nav-link">第三方库</a></div><div class="nav-item"><a href="/utils/" class="nav-link">常用工具</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/base/" class="nav-link">基础</a></div><div class="nav-item"><a href="/front/" class="nav-link router-link-active">前端</a></div><div class="nav-item"><a href="/thirdPartyLibraries/" class="nav-link">第三方库</a></div><div class="nav-item"><a href="/utils/" class="nav-link">常用工具</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>练习笔记</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/STnote.html" class="sidebar-link">复习（CSS+JS）</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>REACT</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/REACT-qidong.html" class="sidebar-link">REACT基础</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>网络请求</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/XHRHttpRequest.html" class="sidebar-link">网络请求</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>webpack</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/webpack.html" class="sidebar-link">webpack</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>REACT全家桶</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/ReactNote.html" class="sidebar-link">复习 React 全家桶</a></li><li><a href="/front/React-2022.html" class="sidebar-link">React 2022 详解</a></li><li><a href="/front/REACT-ketang.html" class="sidebar-link">REACT 笔记</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Type Script</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/TypeScript.html" class="sidebar-link">TypeScript 基础</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>常用工具</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/Utils.html" class="sidebar-link">工具函数（收集中）</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Vue 基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/VueBase.html" class="sidebar-link">vue2.0 基础</a></li><li><a href="/front/vue.html" class="sidebar-link">vue 汇总</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Vue3 基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/vue3.html" class="sidebar-link">vue3 基础汇总</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>antV-G6</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/antV-G6.html" class="active sidebar-link">antV-G6 学习汇总</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front/antV-G6.html#官网" class="sidebar-link">官网</a></li><li class="sidebar-sub-header"><a href="/front/antV-G6.html#_1-安装" class="sidebar-link">1. 安装</a></li><li class="sidebar-sub-header"><a href="/front/antV-G6.html#_2-创建一个简单的图表" class="sidebar-link">2.创建一个简单的图表</a></li><li class="sidebar-sub-header"><a href="/front/antV-G6.html#_3-g6-的核心概念和-api" class="sidebar-link">3. G6 的核心概念和 API</a></li></ul></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>antd-Vue</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/front/Antd-vue.html" class="sidebar-link">Ant Design Vue</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="antv-g6-学习汇总"><a href="#antv-g6-学习汇总" aria-hidden="true" class="header-anchor">#</a> antV-G6 学习汇总</h1> <p></p><div class="table-of-contents"><ul><li><a href="#官网">官网</a></li><li><a href="#_1-安装">1. 安装</a><ul><li><a href="#npm">npm</a></li><li><a href="#pnpm">pnpm</a></li><li><a href="#yarn">yarn</a></li><li><a href="#代码中引入">代码中引入</a></li><li><a href="#使用-script-标签引入">使用 script 标签引入</a></li></ul></li><li><a href="#_2-创建一个简单的图表">2.创建一个简单的图表</a><ul><li><a href="#数据-data">数据(data)</a></li><li><a href="#创建画布-graph">创建画布(graph)</a></li><li><a href="#样式和种类">样式和种类</a></li><li><a href="#交互-behaviors">交互(behaviors)</a></li><li><a href="#布局-layout">布局(layout)</a></li><li><a href="#插件-plugins">插件(plugins)</a></li></ul></li><li><a href="#_3-g6-的核心概念和-api">3. G6 的核心概念和 API</a><ul><li><a href="#图-graph">图(Graph)</a></li><li><a href="#数据-data">数据(Data)</a></li><li><a href="#元素-element">元素(Element)</a></li><li><a href="#布局-layout">布局(Layout)</a></li><li><a href="#交互-behavior-与事件">交互(Behavior)与事件</a></li><li><a href="#插件-plugin">插件(Plugin)</a></li><li><a href="#数据处理-transform">数据处理(Transform)</a></li><li><a href="#主题-theme">主题(Theme)</a></li><li><a href="#动画-animation">动画(Animation)</a></li></ul></li></ul></div><p></p> <h2 id="官网"><a href="#官网" aria-hidden="true" class="header-anchor">#</a> 官网</h2> <ul><li><p>官方文档：https://g6.antv.antgroup.com/manual/getting-started/quick-start</p></li> <li><p>版本：V5.0.44</p></li></ul> <h2 id="_1-安装"><a href="#_1-安装" aria-hidden="true" class="header-anchor">#</a> 1. 安装</h2> <h3 id="npm"><a href="#npm" aria-hidden="true" class="header-anchor">#</a> npm</h3> <ul><li>npm install @antv/g6 --save</li></ul> <h3 id="pnpm"><a href="#pnpm" aria-hidden="true" class="header-anchor">#</a> pnpm</h3> <ul><li>pnpm add @antv/g6</li></ul> <h3 id="yarn"><a href="#yarn" aria-hidden="true" class="header-anchor">#</a> yarn</h3> <ul><li>yarn add @antv/g6</li></ul> <h3 id="代码中引入"><a href="#代码中引入" aria-hidden="true" class="header-anchor">#</a> 代码中引入</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token constant">G6</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="使用-script-标签引入"><a href="#使用-script-标签引入" aria-hidden="true" class="header-anchor">#</a> 使用 script 标签引入</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;https://unpkg.com/@antv/g6@5/dist/g6.min.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="_2-创建一个简单的图表"><a href="#_2-创建一个简单的图表" aria-hidden="true" class="header-anchor">#</a> 2.创建一个简单的图表</h2> <h3 id="数据-data"><a href="#数据-data" aria-hidden="true" class="header-anchor">#</a> 数据(data)</h3> <ul><li>G6 使用 JSON 格式的数据来描述图，通常包括节点和边。我们将使用下面准备的数据：</li> <li>数据中包括两个节点和一条边，节点的 id 属性是必须的，并在 style 设置了每个节点的位置。边的 source 和 target 属性分别表示边的起始节点 id 和结束节点 id。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+  nodes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node-1'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node-2'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">150</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  edges<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token string">'node-1'</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token string">'node-2'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="创建画布-graph"><a href="#创建画布-graph" aria-hidden="true" class="header-anchor">#</a> 创建画布(graph)</h3> <ul><li>创建一个图表实例，传入一个配置对象，包括容器和数据，然后调用 render 方法渲染图表：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Graph <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  container<span class="token punctuation">:</span> <span class="token string">'container'</span><span class="token punctuation">,</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nodes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node-1'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node-2'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">150</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    edges<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token string">'node-1'</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token string">'node-2'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>如下所示，可以看到图表已经顺利绘制出来</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>../assets/imgs/2点1线.png<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+
+</code></pre></div><h3 id="样式和种类"><a href="#样式和种类" aria-hidden="true" class="header-anchor">#</a> 样式和种类</h3> <ul><li>节点和边的样式</li> <li>其中的关键部分是 node.style 和 edge.style 配置项，分别用来配置节点和边的样式。</li> <li>圆形节点type:'circle',是 G6 的默认节点类型，circle、rect、image、path、polygon、polyline、text、html、custom 等等。</li> <li>设置节点的 type 属性，其值可以是一个字符串，也可以是一个函数。当 type 是一个函数时，函数的参数是当前节点的数据对象，函数的返回值是节点的类型。
+<ul><li><ul><li>同样的，元素中 style 样式下的每个属性都可以是一个函数，函数的参数是当前元素的数据对象。</li></ul></li> <li><ul><li>你甚至可以将整个 style 属性设置为一个函数，这样你可以根据数据对象动态设置元素的样式</li></ul></li></ul></li> <li>将节点的大小设置为 20，因此第一个节点是一个半径为 10 的圆形，第二个节点是一个边长为 20 的正方形。
+<ul><li><ul><li>如果想将矩形节点的大小设置为 20x10，可以将 size 设置为一个数组 [20, 10]。</li></ul></li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Graph <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  container<span class="token punctuation">:</span> <span class="token string">'container'</span><span class="token punctuation">,</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nodes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node-1'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node-2'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">150</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    edges<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token string">'node-1'</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token string">'node-2'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  node<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token comment">//节点样式</span>
+    <span class="token comment">// type: 'circle',</span>
+    <span class="token function-variable function">type</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">datum</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> datum<span class="token punctuation">.</span>id <span class="token operator">===</span> <span class="token string">'node-1'</span> <span class="token operator">?</span> <span class="token string">'circle'</span> <span class="token punctuation">:</span> <span class="token string">'rect'</span><span class="token punctuation">,</span>
+    <span class="token comment">/**
+     * 'circle'-圆形节点
+     * 'rect'-矩形节点
+     * 'image'-图片节点
+     * 'path'-路径节点
+     * 'polygon'-多边形节点
+     * 'polyline'-折线节点
+     * 'text'-文本节点
+     * 'html'-html节点
+     * 'custom'-自定义节点
+     * */</span> 
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token comment">//style可以使函数，方便单独设置节点的样式</span>
+      fill<span class="token punctuation">:</span> <span class="token string">'pink'</span><span class="token punctuation">,</span>
+      size<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  edge<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token comment">//边样式</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'lightgreen'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>下面是效果</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>../assets/imgs/颜色和形状.png<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+
+</code></pre></div><h3 id="交互-behaviors"><a href="#交互-behaviors" aria-hidden="true" class="header-anchor">#</a> 交互(behaviors)</h3> <ul><li>G6 提供了多种交互行为，我们添加几个常用的交互，使得用户可以拖拽、缩放画布，拖拽节点。</li> <li>关键字：behaviors</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Graph <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  container<span class="token punctuation">:</span> <span class="token string">'container'</span><span class="token punctuation">,</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nodes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node-1'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node-2'</span><span class="token punctuation">,</span> style<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">150</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    edges<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token string">'node-1'</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token string">'node-2'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  node<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function-variable function">type</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">datum</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> datum<span class="token punctuation">.</span>id <span class="token operator">===</span> <span class="token string">'node-1'</span> <span class="token operator">?</span> <span class="token string">'circle'</span> <span class="token punctuation">:</span> <span class="token string">'rect'</span><span class="token punctuation">,</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      fill<span class="token punctuation">:</span> <span class="token string">'pink'</span><span class="token punctuation">,</span>
+      size<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  edge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'lightgreen'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  behaviors<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'drag-canvas'</span><span class="token punctuation">,</span> <span class="token string">'zoom-canvas'</span><span class="token punctuation">,</span> <span class="token string">'drag-element'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//添加交互</span>
+<span class="token comment">/**
+ * 'zoom-canvas'-画布缩放
+ * 'drag-canvas'-画布拖拽
+ * 'drag-element'-元素拖拽
+ * 'drag-node'-节点拖拽
+ * 'click-select'-元素点击选择
+ * 'collapse-expand'-展开/收起元素
+ * */</span> 
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="布局-layout"><a href="#布局-layout" aria-hidden="true" class="header-anchor">#</a> 布局(layout)</h3> <ul><li>布局算法可以基于一定的规则自动调整节点的位置，G6 提供了多种布局算法，例如树形布局、力导向布局等。</li> <li>关键字：layout
+<ul><li><ul><li>d3-force：布局算法，它是一种力导向布局算法，可以模拟节点之间的引力和斥力，使得节点自动调整到合适的位置。</li></ul></li> <li><ul><li>circular：布局算法，它是一种圆形布局算法，可以将节点按照一定的角度顺序排列。</li></ul></li> <li><ul><li>forceAtlas2：布局算法，它是一种基于图论算法的布局算法，可以自动调整节点的位置，使得节点之间的距离和角度符合一定的规则。</li></ul></li> <li><ul><li>random：布局算法，它是一种随机布局算法，将节点随机放置在画布上。</li></ul></li> <li><ul><li>grid：布局算法，它是一种网格布局算法，将节点按照一定的顺序排列在画布上。</li></ul></li> <li><ul><li>radial：布局算法，它是一种径向布局算法，将节点按照一定的半径顺序排列在画布上。</li></ul></li> <li><ul><li>mindmap：布局算法，它是一种思维导图布局算法，可以将节点按照一定的规则排列在画布上。</li></ul></li> <li><ul><li>dagre：布局算法，它是一种dagre布局算法，可以将节点按照一定的规则排列在画布上。</li></ul></li> <li><ul><li>dagre-horizontal：布局算法，它是一种dagre布局算法，可以将节点按照一定的规则排列在画布上。</li></ul></li> <li><ul><li>force：布局算法，它是一种力导向布局算法，可以模拟节点之间的引力和斥力，使得节点自动调整到合适的位置。</li></ul></li> <li><ul><li>force-atlas2：布局算法，它是一种基于图论算法的布局算法，可以自动调整节点的位置，使得节点之间的距离和角度符合一定的规则。</li></ul></li></ul></li> <li>下面是代码和效果展示</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Graph <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  container<span class="token punctuation">:</span> <span class="token string">'container'</span><span class="token punctuation">,</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nodes<span class="token punctuation">:</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">{</span> length<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">_<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`node-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    edges<span class="token punctuation">:</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">{</span> length<span class="token punctuation">:</span> <span class="token number">9</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">_<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`node-0`</span></span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`node-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  node<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      size<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+      fill<span class="token punctuation">:</span> <span class="token string">'pink'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  edge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'lightgreen'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  behaviors<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'drag-canvas'</span><span class="token punctuation">,</span> <span class="token string">'zoom-canvas'</span><span class="token punctuation">,</span> <span class="token string">'drag-element'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  layout<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token comment">//布局算法</span>
+    type<span class="token punctuation">:</span> <span class="token string">'d3-force'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>../assets/imgs/d3-force布局.png<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+
+</code></pre></div><h3 id="插件-plugins"><a href="#插件-plugins" aria-hidden="true" class="header-anchor">#</a> 插件(plugins)</h3> <ul><li><p>插件机制是 G6 的一个重要特性，可以通过插件扩展 G6 的功能。G6 提供了丰富的内置插件，例如 tooltip、legend 等，也支持用户自定义插件。</p></li> <li><p>使用 grid-line 插件为画布添加网格线;并且配置 follow 属性来指定拖拽画布时网格线是否跟随画布移动</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Graph <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  container<span class="token punctuation">:</span> <span class="token string">'container'</span><span class="token punctuation">,</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nodes<span class="token punctuation">:</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">{</span> length<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">_<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`node-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    edges<span class="token punctuation">:</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span><span class="token punctuation">{</span> length<span class="token punctuation">:</span> <span class="token number">9</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">_<span class="token punctuation">,</span> i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`node-0`</span></span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`node-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  node<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      size<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+      fill<span class="token punctuation">:</span> <span class="token string">'pink'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  edge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'lightgreen'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  behaviors<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'drag-canvas'</span><span class="token punctuation">,</span> <span class="token string">'zoom-canvas'</span><span class="token punctuation">,</span> <span class="token string">'drag-element'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  layout<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'d3-force'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token comment">//插件</span>
+    type<span class="token punctuation">:</span> <span class="token string">'grid-line'</span><span class="token punctuation">,</span><span class="token comment">//网格线插件</span>
+    follow<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><span class="token comment">//是否跟随画布移动</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="_3-g6-的核心概念和-api"><a href="#_3-g6-的核心概念和-api" aria-hidden="true" class="header-anchor">#</a> 3. G6 的核心概念和 API</h2> <h3 id="图-graph"><a href="#图-graph" aria-hidden="true" class="header-anchor">#</a> 图(Graph)</h3> <ul><li>在 G6 中，Graph 对象是图的载体，它包含了图上的所有元素（节点、边等），同时挂载了图的相关操作（如交互监听、元素操作、渲染等）。</li> <li>Graph 对象的完整生命周期包括：
+<ul><li><ul><li>创建: 通过 new Graph(options) 实例化</li></ul></li> <li><ul><li>初始化: 在创建时进行内部初始化</li></ul></li> <li><ul><li>渲染: 调用 graph.render() 进行首次渲染</li></ul></li> <li><ul><li>更新: 通过各种 API 更新图的数据和配置</li></ul></li> <li><ul><li>销毁: 调用 graph.destroy() 销毁实例并释放资源</li></ul></li></ul></li> <li>Graph 类接收一个实例化参数对象，称之为配置项(Options，在可视化理论中将其称为：Specification)，用于配置图的数据、元素样式、布局、交互等。</li> <li>官方文档：https://g6.antv.antgroup.com/manual/graph/graph</li> <li>完整的创建和配置示例</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Graph <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 创建图实例</span>
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 基础配置</span>
+  container<span class="token punctuation">:</span> <span class="token string">'container'</span><span class="token punctuation">,</span>
+  width<span class="token punctuation">:</span> <span class="token number">800</span><span class="token punctuation">,</span>
+  height<span class="token punctuation">:</span> <span class="token number">600</span><span class="token punctuation">,</span>
+  autoResize<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 视口配置</span>
+  zoom<span class="token punctuation">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span>
+  autoFit<span class="token punctuation">:</span> <span class="token string">'view'</span><span class="token punctuation">,</span>
+  padding<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 主题配置</span>
+  theme<span class="token punctuation">:</span> <span class="token string">'dark'</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 节点配置</span>
+  node<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      fill<span class="token punctuation">:</span> <span class="token string">'#7FFFD4'</span><span class="token punctuation">,</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'#5CACEE'</span><span class="token punctuation">,</span>
+      lineWidth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 边配置</span>
+  edge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'#A4D3EE'</span><span class="token punctuation">,</span>
+      lineWidth<span class="token punctuation">:</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+      endArrow<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 布局配置</span>
+  layout<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'force'</span><span class="token punctuation">,</span>
+    preventOverlap<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    linkDistance<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 交互行为</span>
+  behaviors<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'drag-canvas'</span><span class="token punctuation">,</span> <span class="token string">'zoom-canvas'</span><span class="token punctuation">,</span> <span class="token string">'drag-node'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 初始数据</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nodes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node1'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'节点1'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node2'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'节点2'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    edges<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token string">'node1'</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token string">'node2'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'关系'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 渲染图</span>
+graph<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="数据-data-2"><a href="#数据-data-2" aria-hidden="true" class="header-anchor">#</a> 数据(Data)</h3> <ul><li>G6 是一款数据驱动的图可视化引擎，数据是 G6 中最重要的概念之一。</li> <li>G6 使用标准的 JSON 格式描述图数据结构。</li> <li>图数据包含三部分：nodes（节点数据）、edges（边数据）、combos（组合数据）。每一部分对应图中的不同元素，它们的类型和数据决定了图如何展示。</li></ul> <h4 id="节点-node"><a href="#节点-node" aria-hidden="true" class="header-anchor">#</a> 节点(Node)</h4> <ul><li>节点是图中的基本构成单元，它代表图中的实体。每个节点都有一个唯一的 id，用于标识节点，同时节点也可以有数据、样式和状态。
+<ul><li><ul><li>id：节点的唯一标识符，用于标识节点。</li></ul></li> <li><ul><li>data：节点的数据，用于存储节点的自定义数据，例如节点的名称、描述等。可以在样式映射中通过回调函数获取。</li></ul></li> <li><ul><li>style：节点的样式，用于描述节点的样式，如颜色、大小、形状等。</li></ul></li> <li><ul><li>state：节点的状态，用于描述节点的不同状态，如选中、高亮激活、悬停等。</li></ul></li> <li><ul><li>type：节点的类型，用于描述节点的形状，如圆形、矩形、三角形等。</li></ul></li> <li><ul><li>combo：节点的组合 ID，用于组织节点的层级关系，如果没有则为 null。</li></ul></li> <li><ul><li>children：子节点 ID 集合，仅在树图场景下使用</li></ul></li></ul></li> <li>示例</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;node-1&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;circle&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;data&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;alice&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;role&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;Admin&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;style&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;x&quot;</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token string">&quot;y&quot;</span><span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token string">&quot;size&quot;</span><span class="token punctuation">:</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token string">&quot;fill&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;violet&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;states&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;selected&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;combo&quot;</span><span class="token punctuation">:</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="边-edge"><a href="#边-edge" aria-hidden="true" class="header-anchor">#</a> 边(Edge)</h4> <ul><li>边是连接节点的元素，表示节点之间的关系。每条边都与两个节点（起始节点和目标节点）关联，并且边本身可以有数据、样式和状态。边的数据常用于表示节点之间的逻辑或关系，如社交网络中的用户关系、流程图中的步骤流转等。
+<ul><li><ul><li>id：边的唯一标识符，用于标识边。</li></ul></li> <li><ul><li>source：边的起始节点 ID，用于标识边的起始节点。</li></ul></li> <li><ul><li>target：边的目标节点 ID，用于标识边的目标节点。</li></ul></li> <li><ul><li>data：边数据，用于存储边的自定义数据，可以在样式映射中通过回调函数获取。</li></ul></li> <li><ul><li>style：边样式，用于描述边的样式，如颜色、宽度、箭头、大小等。</li></ul></li> <li><ul><li>state：边状态，用于描述边的不同状态，如选中、高亮激活、悬停等。</li></ul></li> <li><ul><li>type：边类型，用于描述边的形状，如直线、曲线、弧线等。</li></ul></li></ul></li> <li>示例</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;source&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;alice&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;target&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;bob&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;line&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;data&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;relationship&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;friend&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;strength&quot;</span><span class="token punctuation">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;style&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;stroke&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;green&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;lineWidth&quot;</span><span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;states&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;hover&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="组合-combo"><a href="#组合-combo" aria-hidden="true" class="header-anchor">#</a> 组合(Combo)</h4> <ul><li>通过组合，可以为多个节点创建一个逻辑单元，用于图形的分层、分组或其他结构化需求。组合可以包含子节点或其他组合，从而形成嵌套层次。
+<ul><li><ul><li>id：组合的唯一标识符，用于标识组合。</li></ul></li> <li><ul><li>data：组合的数据，用于存储组合的自定义数据，可以在样式映射中通过回调函数获取。</li></ul></li> <li><ul><li>style：组合的样式，用于描述组合的样式，如颜色、大小、形状等。</li></ul></li> <li><ul><li>state：组合的状态，用于描述组合的不同状态，如选中、高亮激活、悬停等。</li></ul></li> <li><ul><li>type：组合的类型，用于描述组合的形状，如圆形、矩形、三角形等。</li></ul></li> <li><ul><li>combo：组合的父组合 ID。如果没有父组合，则为 null</li></ul></li></ul></li> <li>示例</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;combo1&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;circle&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;data&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;groupName&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;Group A&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;style&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;fill&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;lightblue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;stroke&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;blue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;collapsed&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;states&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;combo&quot;</span><span class="token punctuation">:</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="数据的操作"><a href="#数据的操作" aria-hidden="true" class="header-anchor">#</a> 数据的操作</h4> <ul><li>数据<strong>初始化</strong> <ul><li><ul><li>初始化时可以直接传入数据</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Graph <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    nodes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node1'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'节点1'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node2'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'节点2'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    edges<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token string">'node1'</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token string">'node2'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'关系'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><ul><li>在实例化graph之后也可以通过 setData 方法设置数据</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>graph<span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  nodes<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node3'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'节点3'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node4'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'节点4'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  edges<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> source<span class="token punctuation">:</span> <span class="token string">'node3'</span><span class="token punctuation">,</span> target<span class="token punctuation">:</span> <span class="token string">'node4'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'新关系'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li>数据<strong>增删改查</strong> <ul><li><ul><li>增加节点:**graph.addNodeData()**方法,此方法接受一个数据集合[]，可以批量增加节点。</li></ul></li> <li><ul><li>增加边:**graph.addEdgeData()**方法,此方法接受一个数据集合[]，可以批量增加边。</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 增加节点</span>
+graph<span class="token punctuation">.</span><span class="token function">addNodeData</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node6'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'批量节点1'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token string">'node7'</span><span class="token punctuation">,</span> data<span class="token punctuation">:</span> <span class="token punctuation">{</span> label<span class="token punctuation">:</span> <span class="token string">'批量节点2'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 增加边</span>
+graph<span class="token punctuation">.</span><span class="token function">addEdgeData</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    source<span class="token punctuation">:</span> <span class="token string">'node6'</span><span class="token punctuation">,</span>
+    target<span class="token punctuation">:</span> <span class="token string">'node7'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      label<span class="token punctuation">:</span> <span class="token string">'连接到新节点'</span><span class="token punctuation">,</span>
+      weight<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'#F6BD16'</span><span class="token punctuation">,</span>
+      lineWidth<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><ul><li>更新数据节点：**graph.updateNodeData()**方法,此方法接受一个数据集合[]，可以批量更新节点。</li></ul></li> <li><ul><li>更新数据边：**graph.updateEdgeData()**方法,此方法接受一个数据集合[]，可以批量更新边。</li></ul></li> <li><ul><li>查询数据：</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 获取所有节点数据</span>
+<span class="token keyword">const</span> nodes <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getNodeData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 获取所有边数据</span>
+<span class="token keyword">const</span> edges <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getEdgeData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 获取特定节点数据</span>
+<span class="token keyword">const</span> node1 <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getNodeData</span><span class="token punctuation">(</span><span class="token string">'node1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 获取特定边数据</span>
+<span class="token keyword">const</span> edge1 <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getEdgeData</span><span class="token punctuation">(</span><span class="token string">'node1-node2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li></ul> <h3 id="元素-element"><a href="#元素-element" aria-hidden="true" class="header-anchor">#</a> 元素(Element)</h3> <h4 id="元素的介绍"><a href="#元素的介绍" aria-hidden="true" class="header-anchor">#</a> 元素的介绍</h4> <ul><li>G6 中图元素包括节点(Node)、边(Edge)、组合(Combo)，它们是图的基本构成单元。</li> <li>一个元素是由一个或多个原子图形组合而成，原子图形是 G6 中的最小图形单元，包括矩形、圆形、文本、路径等。</li></ul> <h4 id="元素状态"><a href="#元素状态" aria-hidden="true" class="header-anchor">#</a> 元素状态</h4> <ul><li>状态(State)是指元素存在的状态，例如选中、悬停、激活等。状态可以使得元素在不同的状态下展示不同的样式，帮助用户更直观的理解图中的信息。
+<ul><li><ul><li>selected：选中状态，通常用于表示用户已选择的元素。</li></ul></li> <li><ul><li>active：激活状态，通常用于表示当前交互的活跃元素。</li></ul></li> <li><ul><li>highlight：高亮状态，通常用于强调显示特定元素。</li></ul></li> <li><ul><li>inactive：不激活状态，通常用于表示当前不活跃的元素。</li></ul></li> <li><ul><li>disabled：禁用状态，通常用于表示当前不可用的元素。</li></ul></li> <li><ul><li><blockquote><p>注意：当一个元素没有设置任何状态时，它处于&quot;默认状态&quot;。预设状态并非强制使用，用户可以根据需求定义自己的状态类型。</p></blockquote></li></ul></li></ul></li> <li>配置实例,目前 G6 支持在样式映射中配置状态样式，例如：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 其他配置...</span>
+  node<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 默认状态的样式</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      fill<span class="token punctuation">:</span> <span class="token string">'#C6E5FF'</span><span class="token punctuation">,</span>
+      stroke<span class="token punctuation">:</span> <span class="token string">'#5B8FF9'</span><span class="token punctuation">,</span>
+      lineWidth<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 各状态下的样式</span>
+    state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      selected<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        fill<span class="token punctuation">:</span> <span class="token string">'#95D6FB'</span><span class="token punctuation">,</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'#1890FF'</span><span class="token punctuation">,</span>
+        lineWidth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        shadowColor<span class="token punctuation">:</span> <span class="token string">'#1890FF'</span><span class="token punctuation">,</span>
+        shadowBlur<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      highlight<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'#FF6A00'</span><span class="token punctuation">,</span>
+        lineWidth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      disable<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        fill<span class="token punctuation">:</span> <span class="token string">'#ECECEC'</span><span class="token punctuation">,</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'#BFBFBF'</span><span class="token punctuation">,</span>
+        opacity<span class="token punctuation">:</span> <span class="token number">0.5</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 边的默认样式和状态样式</span>
+  edge<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">/* 默认样式 */</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      selected<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">/* 选中状态样式 */</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      highlight<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">/* 高亮状态样式 */</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 其他状态...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// 组合的默认样式和状态样式</span>
+  combo<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">/* 默认样式 */</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      selected<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">/* 选中状态样式 */</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 其他状态...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="查询元素状态"><a href="#查询元素状态" aria-hidden="true" class="header-anchor">#</a> 查询元素状态</h4> <ul><li>G6 提供了多个 API 用于获取状态，或者判断元素是否处于某个状态：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 获取指定元素的所有状态（返回状态数组）</span>
+<span class="token keyword">const</span> states <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getElementState</span><span class="token punctuation">(</span><span class="token string">'node1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>states<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 例如：['selected', 'highlight']</span>
+
+<span class="token comment">// 获取所有处于指定状态的节点数据</span>
+<span class="token keyword">const</span> selectedNodes <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getElementDataByState</span><span class="token punctuation">(</span><span class="token string">'node'</span><span class="token punctuation">,</span> <span class="token string">'selected'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>当元素仅存在 默认状态 时，getElementState 返回值为 []。</p></blockquote> <h4 id="元素自定义状态"><a href="#元素自定义状态" aria-hidden="true" class="header-anchor">#</a> 元素自定义状态</h4> <ul><li>自定元素义状态与应用自定义状态：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 定义自定义状态</span>
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 其他配置...</span>
+  node<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    style<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">/* 默认样式 */</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 自定义状态：警告</span>
+      warning<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        fill<span class="token punctuation">:</span> <span class="token string">'#FFF7E6'</span><span class="token punctuation">,</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'#FA8C16'</span><span class="token punctuation">,</span>
+        lineWidth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        lineDash<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// 自定义状态：加密</span>
+      encrypted<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        fill<span class="token punctuation">:</span> <span class="token string">'#E6F7FF'</span><span class="token punctuation">,</span>
+        stroke<span class="token punctuation">:</span> <span class="token string">'#1890FF'</span><span class="token punctuation">,</span>
+        icon<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          show<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          img<span class="token punctuation">:</span> <span class="token string">'https://path/to/lock-icon.png'</span><span class="token punctuation">,</span>
+          width<span class="token punctuation">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+          height<span class="token punctuation">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//应用自定义状态</span>
+graph<span class="token punctuation">.</span><span class="token function">setElementState</span><span class="token punctuation">(</span><span class="token string">'node1'</span><span class="token punctuation">,</span> <span class="token string">'warning'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">setElementState</span><span class="token punctuation">(</span><span class="token string">'node2'</span><span class="token punctuation">,</span> <span class="token string">'encrypted'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="布局-layout-2"><a href="#布局-layout-2" aria-hidden="true" class="header-anchor">#</a> 布局(Layout)</h3> <ul><li>图布局是指将图中的元素按照一定的规则进行排列的过程，例如基于电荷弹性模型的力导向布局、逐次排布的网格布局、基于层次结构的树布局等。</li> <li>配置布局关键字(layout)</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  layout<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 指定要使用的布局算法</span>
+    type<span class="token punctuation">:</span> <span class="token string">'force'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 布局算法的配置项</span>
+    gravity<span class="token punctuation">:</span> <span class="token number">10</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>也可在图实例化之后使用 graph.setLayout 来更新布局配置。</li> <li>一般图 Graph 布局方法总览：
+<ul><li><ul><li>1、<strong>Random Layout</strong>：随机布局；</li></ul></li> <li><ul><li>2、<strong>Force2 Layout</strong>：G6 4.7.0 后支持力导向布局，与 gForce 相比性能更强；</li></ul></li> <li><ul><li>3、<strong>GForce Layout</strong>：G6 4.0 支持的经典力导向布局，支持 GPU 并行计算；</li></ul></li> <li><ul><li>4、<strong>Force Layout</strong>：引用 d3 的经典力导向布局；</li></ul></li> <li><ul><li>5、<strong>Fruchterman Layout</strong>：Fruchterman 布局，一种力导布局；</li></ul></li> <li><ul><li>6、<strong>Circular Layout</strong>：环形布局；</li></ul></li> <li><ul><li>7、<strong>Radial Layout</strong>：辐射状布局；</li></ul></li> <li><ul><li>8、<strong>MDS Layout</strong>：高维数据降维算法布局；</li></ul></li> <li><ul><li>9、<strong>Dagre Layout</strong>：层次布局；</li></ul></li> <li><ul><li>10、<strong>Concentric Layout</strong>：同心圆布局；</li></ul></li> <li><ul><li>11、<strong>Grid Layout</strong>：网格布局；</li></ul></li> <li><ul><li>12、<strong>Combo Force Layout</strong>：*V3.5 新增。*适用于带有 combo 图的力导向布局，推荐有 combo 的图使用该布局。</li></ul></li> <li><ul><li>13、<strong>Combo Combined Layout</strong>：*V4.6 新增。*适用于带有 combo 的图，可自由组合内外布局，默认情况下可以有较好的效果，推荐有 combo 的图使用该布局。</li></ul></li> <li><ul><li>14、<strong>Snake Layout</strong>：蛇形布局；</li></ul></li></ul></li></ul> <h4 id="执行布局"><a href="#执行布局" aria-hidden="true" class="header-anchor">#</a> 执行布局</h4> <ul><li><p>通常，在调用 graph.render() 后，G6 会自动执行布局算法。</p></li> <li><p>如果需要手动执行布局算法，G6 提供了以下 API：</p> <ul><li><ul><li>1、<strong>graph.layout()</strong>：执行布局算法。</li></ul></li> <li><ul><li>2、<strong>graph.setLayout()</strong>：设置图的布局算法及配置。</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 1、设置简单的力导向布局</span>
+graph<span class="token punctuation">.</span><span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">'force'</span><span class="token punctuation">,</span>
+  preventOverlap<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 防止节点重叠</span>
+  nodeStrength<span class="token punctuation">:</span> <span class="token operator">-</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token comment">// 节点间斥力，负值为斥力</span>
+  edgeStrength<span class="token punctuation">:</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token comment">// 边的强度，会影响边的长度</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 2、使用函数式,基于当前布局配置进行更新</span>
+graph<span class="token punctuation">.</span><span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">prevLayout</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 如果之前是力导向布局，调整其参数</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>prevLayout<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">'force'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token operator">...</span>prevLayout<span class="token punctuation">,</span>
+      preventOverlap<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      nodeStrength<span class="token punctuation">:</span> <span class="token operator">-</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token comment">// 增加斥力</span>
+      alphaDecay<span class="token punctuation">:</span> <span class="token number">0.01</span><span class="token punctuation">,</span> <span class="token comment">// 降低衰减率，让布局有更多迭代时间</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 否则切换到放射状布局</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'radial'</span><span class="token punctuation">,</span>
+    unitRadius<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+    preventOverlap<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 3、设置组合布局 - 不同的节点使用不同的布局算法</span>
+graph<span class="token punctuation">.</span><span class="token function">setLayout</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'grid'</span><span class="token punctuation">,</span>
+    <span class="token comment">// 过滤函数：只有type为'main'的节点参与布局</span>
+    <span class="token function-variable function">nodeFilter</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> node<span class="token punctuation">.</span>data<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">'main'</span><span class="token punctuation">,</span>
+    rows<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'circle'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">nodeFilter</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">node</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> node<span class="token punctuation">.</span>data<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">'sub'</span><span class="token punctuation">,</span>
+    radius<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><ul><li>3、<strong>graph.stopLayout()</strong>：停止正在进行中的布局计算。主要用于停止迭代类型的布局算法，如力导向布局。</li></ul></li></ul> <blockquote><p>适用于带有迭代动画的布局，目前有 force 属于此类布局。当布局计算时间过长时，可以手动停止迭代。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 1、基本使用,5秒后停止布局</span>
+<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  graph<span class="token punctuation">.</span><span class="token function">stopLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'布局已手动停止'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">5000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//2、 结合用户交互停止布局,当用户点击画布时停止布局</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> CanvasEvent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span>CanvasEvent<span class="token punctuation">.</span><span class="token constant">CLICK</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  graph<span class="token punctuation">.</span><span class="token function">stopLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'用户点击画布，布局已停止'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p>获取当前布局配置：</p> <ul><li><ul><li><strong>graph.getLayout()</strong></li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 获取当前布局配置</span>
+<span class="token keyword">const</span> currentLayout <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getLayout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'当前布局类型:'</span><span class="token punctuation">,</span> currentLayout<span class="token punctuation">.</span>type<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li></ul> <h4 id="layout类型定义"><a href="#layout类型定义" aria-hidden="true" class="header-anchor">#</a> Layout类型定义</h4> <ul><li>布局配置类型，可以是单一布局配置或布局配置数组。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>type LayoutOptions <span class="token operator">=</span> SingleLayoutOptions <span class="token operator">|</span> SingleLayoutOptions<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">//SingleLayoutOptions单一布局配置，可以是内置布局配置或自定义基础布局配置。</span>
+type SingleLayoutOptions <span class="token operator">=</span> BuiltInLayoutOptions <span class="token operator">|</span> BaseLayoutOptions<span class="token punctuation">;</span>
+</code></pre></div><ul><li>BaseLayoutOptions,所有布局类型共有的基础配置项。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">interface</span> <span class="token class-name">BaseLayoutOptions</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 布局类型</span>
+  type<span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+
+  <span class="token comment">// 参与该布局的节点过滤函数</span>
+  nodeFilter<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">node<span class="token punctuation">:</span> NodeData</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> boolean<span class="token punctuation">;</span>
+
+  <span class="token comment">// 是否在初始化元素前计算布局</span>
+  preLayout<span class="token operator">?</span><span class="token punctuation">:</span> boolean<span class="token punctuation">;</span>
+
+  <span class="token comment">// 不可见节点是否参与布局（当 preLayout 为 true 时生效）</span>
+  isLayoutInvisibleNodes<span class="token operator">?</span><span class="token punctuation">:</span> boolean<span class="token punctuation">;</span>
+
+  <span class="token comment">// 启用布局动画，对于迭代布局，会在两次迭代之间进行动画过渡</span>
+  animation<span class="token operator">?</span><span class="token punctuation">:</span> boolean<span class="token punctuation">;</span>
+
+  <span class="token comment">// 是否在 WebWorker 中运行布局</span>
+  enableWorker<span class="token operator">?</span><span class="token punctuation">:</span> boolean<span class="token punctuation">;</span>
+
+  <span class="token comment">// 迭代布局的迭代次数</span>
+  iterations<span class="token operator">?</span><span class="token punctuation">:</span> number<span class="token punctuation">;</span>
+
+  <span class="token comment">// 其他特定布局的配置项</span>
+  <span class="token punctuation">[</span>key<span class="token punctuation">:</span> string<span class="token punctuation">]</span><span class="token punctuation">:</span> any<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="交互-behavior-与事件"><a href="#交互-behavior-与事件" aria-hidden="true" class="header-anchor">#</a> 交互(Behavior)与事件</h3> <ul><li><p>除了 内置交互行为  Behavior 和 交互模式 Mode 搭配的事件管理方式外，G6 提供了直接的单个事件、时机的监听方法，可以监听画布、节点、边、以及各函数被调用的时机等</p></li> <li><p>G6 上所有的事件都需要在 graph 上监听，这些事件可以分为以下六个层次：</p> <ul><li><ul><li>1、<strong>全局事件</strong>：只要在画布上范围内发生均会被触发，如 mousedown，mouseup，click，mouseenter，mouseleave 等。</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ev</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> shape <span class="token operator">=</span> ev<span class="token punctuation">.</span>target<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> item <span class="token operator">=</span> ev<span class="token punctuation">.</span>item<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> type <span class="token operator">=</span> item<span class="token punctuation">.</span><span class="token function">getType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><ul><li>2、<strong>canvas画布事件</strong>：只在 canvas 空白处被触发，如 canvas:mousedown，canvas:click 等，以canvas:eventName 为事件名称。</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'canvas:click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ev</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> shape <span class="token operator">=</span> ev<span class="token punctuation">.</span>target<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> item <span class="token operator">=</span> ev<span class="token punctuation">.</span>item<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> type <span class="token operator">=</span> item<span class="token punctuation">.</span><span class="token function">getType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><ul><li>3、<strong>节点/边/combo 上的事件</strong>：节点、边、combo 上的事件，如 node:mousedown，node:mouseup，node:click，node:mouseenter，node:mouseleave 等，以node:eventName 为事件名称。</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>
+graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'node:click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ev</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> node <span class="token operator">=</span> ev<span class="token punctuation">.</span>item<span class="token punctuation">;</span> <span class="token comment">// 被点击的节点元素</span>
+  <span class="token keyword">const</span> shape <span class="token operator">=</span> ev<span class="token punctuation">.</span>target<span class="token punctuation">;</span> <span class="token comment">// 被点击的图形，可根据该信息作出不同响应，以达到局部响应效果</span>
+  <span class="token comment">// ... do sth</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'edge:click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ev</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> edge <span class="token operator">=</span> ev<span class="token punctuation">.</span>item<span class="token punctuation">;</span> <span class="token comment">// 被点击的边元素</span>
+  <span class="token keyword">const</span> shape <span class="token operator">=</span> ev<span class="token punctuation">.</span>target<span class="token punctuation">;</span> <span class="token comment">// 被点击的图形，可根据该信息作出不同响应，以达到局部响应效果</span>
+  <span class="token comment">// ... do sth</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'combo:click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ev</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> combo <span class="token operator">=</span> ev<span class="token punctuation">.</span>item<span class="token punctuation">;</span> <span class="token comment">// 被点击 combo 元素</span>
+  <span class="token keyword">const</span> shape <span class="token operator">=</span> ev<span class="token punctuation">.</span>target<span class="token punctuation">;</span> <span class="token comment">// 被点击的图形，可根据该信息作出不同响应，以达到局部响应效果</span>
+  <span class="token comment">// ... do sth</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><ul><li>4、<strong>图形上的事件</strong>：指定图形上的事件，如 circle-shape:mousedown，circle-shape:click 等，以 shapeName:eventName 为事件名称。可用于绑定节点/边/combo 中对局部图形做出响应的场景。效果类似上文 graph.on('node:click', fn) 中通过 target 信息作出不同响应。</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'circle-shape:click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ev</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> shape <span class="token operator">=</span> ev<span class="token punctuation">.</span>target<span class="token punctuation">;</span> <span class="token comment">// 被点击的图形</span>
+  <span class="token comment">// ... do sth</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><ul><li>5、<strong>时机事件</strong>：时机事件指渲染、视口变换、元素增删改、数据变换等时机。</li></ul></li></ul> <blockquote><p>官方时机事件：https://g6-v4.antv.vision/api/Event#时机事件
+节点/边/Combo 状态改变时的事件：beforerefreshitem 与 afterrefreshitem；
+布局时机：beforelayout 与 afterlayout。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'afterrender'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ev</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ... do sth</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><ul><li>6、<strong>自定义事件</strong>：G6 允许用户自定义任意事件，可在任意位置通过 graph.emit(customEventName: string, event: IG6GraphEvent) 触发一个事件，第一个参数为自定义事件名称。在触发前，通过 graph.on(customEventName: string, callback: Function) 进行监听。</li></ul></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>graph<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'some-custom-event-name'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">ev</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ... do sth</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'some-custom-event-name'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token comment">// some params</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></li></ul> <h3 id="插件-plugin"><a href="#插件-plugin" aria-hidden="true" class="header-anchor">#</a> 插件(Plugin)</h3> <ul><li><p>插件(Plugin)是 G6 中最灵活的扩展机制，用户可以通过插件来扩展 G6 的功能，例如在画布中额外挂载图形组件、实现撤销重做等功能。</p></li> <li><p>绝大多数的定制需求都可以通过插件来实现，G6 内置了一些常用的插件，例如：Tooltip、Grid、History。</p></li></ul> <h4 id="内置插件"><a href="#内置插件" aria-hidden="true" class="header-anchor">#</a> 内置插件</h4> <ul><li>官方文档：https://g6.antv.antgroup.com/manual/plugin/overview</li> <li>常用的插件有：
+<ul><li><ul><li>grid-line：网格线，在画布上显示网格参考线</li></ul></li> <li><ul><li>background：背景，为画布添加背景图片或颜色</li></ul></li> <li><ul><li>toolbar：工具栏，在画布上显示工具栏</li></ul></li> <li><ul><li>tooltip：提示框，在画布上显示提示框</li></ul></li> <li><ul><li>fisheye：放大镜，在画布上显示放大镜</li></ul></li></ul></li> <li>插件配置方式</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Graph <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@antv/g6'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 其他配置...</span>
+  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'grid'</span><span class="token punctuation">,</span> <span class="token string">'minimap'</span><span class="token punctuation">,</span> <span class="token string">'tooltip'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>配置插件参数实例：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graph</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 其他配置...</span>
+  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'grid'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'tooltip'</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">getContent</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token string">`&lt;div&gt;节点：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/div&gt;`</span></span><span class="token punctuation">,</span>
+      key<span class="token punctuation">:</span> <span class="token string">'my-tooltip'</span><span class="token punctuation">,</span> <span class="token comment">// 为插件指定key，便于后续更新</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="数据处理-transform"><a href="#数据处理-transform" aria-hidden="true" class="header-anchor">#</a> 数据处理(Transform)</h3> <h3 id="主题-theme"><a href="#主题-theme" aria-hidden="true" class="header-anchor">#</a> 主题(Theme)</h3> <h3 id="动画-animation"><a href="#动画-animation" aria-hidden="true" class="header-anchor">#</a> 动画(Animation)</h3></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">3/26/2025, 3:01:54 PM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/front/vue3.html" class="prev">
+          vue3 基础汇总
+        </a></span> <span class="next"><a href="/front/Antd-vue.html">
+          Ant Design Vue
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.f524855a.js" defer></script><script src="/assets/js/25.437d3a9a.js" defer></script>
+  </body>
+</html>
