@@ -100,6 +100,16 @@ module.exports = {
           collapsable: false,
           children: ["TypeScript"],
         },
+        {
+          title: "C# 基础1",
+          collapsable: false,//是否可以折叠
+          children: ["C#Base","C#Base2"],
+        },
+        {
+          title: "JAVA 基础",
+          collapsable: false,
+          children: ["JAVA"],
+        },
       ],
     },
   },
