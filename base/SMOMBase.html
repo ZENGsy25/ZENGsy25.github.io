@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>.NET框架 SMOM项目学习1 | Saturn-blog</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.9854472c.css" as="style"><link rel="preload" href="/assets/js/app.4b8619cd.js" as="script"><link rel="preload" href="/assets/js/12.541b48df.js" as="script"><link rel="prefetch" href="/assets/js/10.20220a12.js"><link rel="prefetch" href="/assets/js/11.2de526bd.js"><link rel="prefetch" href="/assets/js/13.50c1af9b.js"><link rel="prefetch" href="/assets/js/14.890a2e01.js"><link rel="prefetch" href="/assets/js/15.5dc4e4d4.js"><link rel="prefetch" href="/assets/js/16.5c6ddf6b.js"><link rel="prefetch" href="/assets/js/17.f49d446e.js"><link rel="prefetch" href="/assets/js/18.25f25e0c.js"><link rel="prefetch" href="/assets/js/19.3f8508d4.js"><link rel="prefetch" href="/assets/js/2.692ebc39.js"><link rel="prefetch" href="/assets/js/20.c46ee038.js"><link rel="prefetch" href="/assets/js/21.dbf7df9b.js"><link rel="prefetch" href="/assets/js/22.59cab79e.js"><link rel="prefetch" href="/assets/js/23.888c314c.js"><link rel="prefetch" href="/assets/js/24.d9b9efa2.js"><link rel="prefetch" href="/assets/js/25.f5e860ee.js"><link rel="prefetch" href="/assets/js/26.a09352ee.js"><link rel="prefetch" href="/assets/js/27.f272c891.js"><link rel="prefetch" href="/assets/js/28.04b37bb9.js"><link rel="prefetch" href="/assets/js/29.0dd27c25.js"><link rel="prefetch" href="/assets/js/3.c9aad935.js"><link rel="prefetch" href="/assets/js/30.1c18bf35.js"><link rel="prefetch" href="/assets/js/31.3a0db665.js"><link rel="prefetch" href="/assets/js/32.fde1517c.js"><link rel="prefetch" href="/assets/js/33.099333ad.js"><link rel="prefetch" href="/assets/js/34.50d2d03a.js"><link rel="prefetch" href="/assets/js/35.4e42d7ca.js"><link rel="prefetch" href="/assets/js/36.665ef74e.js"><link rel="prefetch" href="/assets/js/37.f4769cd4.js"><link rel="prefetch" href="/assets/js/38.2b5d092d.js"><link rel="prefetch" href="/assets/js/39.5422afd3.js"><link rel="prefetch" href="/assets/js/4.926d8825.js"><link rel="prefetch" href="/assets/js/40.851cab88.js"><link rel="prefetch" href="/assets/js/41.ee5cb39a.js"><link rel="prefetch" href="/assets/js/42.3ae0a316.js"><link rel="prefetch" href="/assets/js/43.aeb60b83.js"><link rel="prefetch" href="/assets/js/44.38e42297.js"><link rel="prefetch" href="/assets/js/45.9d3cf9b0.js"><link rel="prefetch" href="/assets/js/46.1d01a0b8.js"><link rel="prefetch" href="/assets/js/47.cde430a5.js"><link rel="prefetch" href="/assets/js/48.a1d44224.js"><link rel="prefetch" href="/assets/js/49.11e51e5d.js"><link rel="prefetch" href="/assets/js/5.0be7e466.js"><link rel="prefetch" href="/assets/js/50.43a5b1ee.js"><link rel="prefetch" href="/assets/js/6.b2bcdce9.js"><link rel="prefetch" href="/assets/js/7.375cd0f9.js"><link rel="prefetch" href="/assets/js/8.7b4dade6.js"><link rel="prefetch" href="/assets/js/9.70370948.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9854472c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Saturn-blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/base/" class="nav-link router-link-active">基础</a></div><div class="nav-item"><a href="/front/" class="nav-link">前端</a></div><div class="nav-item"><a href="/thirdPartyLibraries/" class="nav-link">第三方库</a></div><div class="nav-item"><a href="/utils/" class="nav-link">常用工具</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/base/" class="nav-link router-link-active">基础</a></div><div class="nav-item"><a href="/front/" class="nav-link">前端</a></div><div class="nav-item"><a href="/thirdPartyLibraries/" class="nav-link">第三方库</a></div><div class="nav-item"><a href="/utils/" class="nav-link">常用工具</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>js</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/js.html" class="sidebar-link">第一周</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>CSS基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/css.html" class="sidebar-link">css技巧汇总</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>js</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/jsBase.html" class="sidebar-link">js 基础</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>JS笔记</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/JSbase1.html" class="sidebar-link">js基础笔记</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>JS语言基础笔记</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/LANbase.html" class="sidebar-link">JS语言基础笔记</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>GIT笔记</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/GIT.html" class="sidebar-link">GIT</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>C# 基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/C-Sharp.html" class="sidebar-link">C# 教程</a></li><li><a href="/base/CSharpBase.html" class="sidebar-link">C#语言基础学习指南</a></li><li><a href="/base/CSharpBase2.html" class="sidebar-link">C#语言基础学习指南</a></li><li><a href="/base/linQ.html" class="sidebar-link">LINQ 常用语法说明</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>JAVA 基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/JAVA.html" class="sidebar-link">JAVA学习指南</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>SMOM项目</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/SMOMBase.html" class="active sidebar-link">.NET框架 SMOM项目学习1</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#单表" class="sidebar-link">单表</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#主从表" class="sidebar-link">主从表</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#带关系的表" class="sidebar-link">带关系的表</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#验证规则" class="sidebar-link">验证规则</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#提交事件" class="sidebar-link">提交事件</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#api接口" class="sidebar-link">API接口</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#框架api的使用" class="sidebar-link">框架Api的使用</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#图片排列" class="sidebar-link">图片排列</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#快码" class="sidebar-link">快码</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#固定列、默认值" class="sidebar-link">固定列、默认值</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#禁用、启用" class="sidebar-link">禁用、启用</a></li><li class="sidebar-sub-header"><a href="/base/SMOMBase.html#下拉数据源" class="sidebar-link">下拉数据源</a></li></ul></li><li><a href="/base/SMOMPro.html" class="sidebar-link">.NET框架 SMOM项目学习2</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>SQL基础</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/base/SQL.html" class="sidebar-link">SQL 常用语法说明</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="net框架-smom项目学习1"><a href="#net框架-smom项目学习1" aria-hidden="true" class="header-anchor">#</a> .NET框架 SMOM项目学习1</h1> <p></p><div class="table-of-contents"><ul><li><a href="#单表">单表</a></li><li><a href="#主从表">主从表</a></li><li><a href="#带关系的表">带关系的表</a></li><li><a href="#验证规则">验证规则</a><ul><li><a href="#标准规则">标准规则</a></li><li><a href="#运行时规则">运行时规则</a></li><li><a href="#预编译规则">预编译规则</a></li><li><a href="#后端验证通用说明">后端验证通用说明</a></li><li><a href="#前端验证规则">前端验证规则</a></li><li><a href="#根据条件控制前端规则">根据条件控制前端规则</a></li></ul></li><li><a href="#提交事件">提交事件</a><ul><li><a href="#提交前事件">提交前事件</a></li><li><a href="#提交后事件">提交后事件</a></li><li><a href="#提交事件注意事项">提交事件注意事项</a></li></ul></li><li><a href="#api接口">API接口</a></li><li><a href="#框架api的使用">框架Api的使用</a></li><li><a href="#图片排列">图片排列</a></li><li><a href="#快码">快码</a></li><li><a href="#固定列、默认值">固定列、默认值</a></li><li><a href="#禁用、启用">禁用、启用</a></li><li><a href="#下拉数据源">下拉数据源</a></li></ul></div><p></p> <h2 id="单表"><a href="#单表" aria-hidden="true" class="header-anchor">#</a> 单表</h2> <ul><li>在对应项目下新建文件夹加上s结尾。</li> <li>创建实体类</li> <li>实体必须标记为根实体（RootEntity）/子实体（ChildEntity），序列化（Serializable）特性[RootEntity,Serializable]。</li> <li>配置查询面板，框架自带的查询标记特性：[CriteriaQuery]；自定义的查询标记特性：[ConditionQueryType(typeof(XXXXXCriteria))]</li> <li>通过代码段创建属性，pfp 创建属性面板
+<ul><li>PFProperty：一般属性（常用）</li> <li>PFPropertyReference：非空引用属性（常用）</li> <li>PFPropertyReferenceNullable：可空引用属性（常用）</li> <li>PFViewProperty：视图属性，可以有应用属性带出属性值（常用）</li> <li>PFPropertyList：列表属性（常用）</li></ul></li> <li>实体配置，继承自EntityConfig&lt;当前实体类&gt;</li> <li>配置元数据映射实体对应的数据库表</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>using System;
+using SIE.Domain;
+namespace SIE.Lib.Employers
+{
+  [RootEntity, Serializable]//根实体，可序列化的
+  [CriteriaQuery]//默认查询条件面板
+  public class Employer : DataEntity {//实体类继承DataEntity，会自动带出创建时间、修改时间、创建人、修改人
+    #region 编码 Code
+    /// &lt;summary&gt;
+    /// 编码
+    /// &lt;/summary&gt;
+    [Required]
+    [Label(&quot;编码&quot;)]
+    public static readonly Property&lt;string&gt; CodeProperty = P&lt;Employer&gt;.Register(e =&gt; e.Code);//指定所属的类名：Employer
+
+    /// &lt;summary&gt;
+    /// 编码
+    /// &lt;/summary&gt;
+    public string Code
+    {
+        get { return this.GetProperty(CodeProperty); }
+        set { this.SetProperty(CodeProperty, value); }
+    }
+    #endregion
+
+    #region 名称 Name
+    /// &lt;summary&gt;
+    /// 名称
+    /// &lt;/summary&gt;
+    [Required]
+    [Label(&quot;名称&quot;)]
+    public static readonly Property&lt;string&gt; NameProperty = P&lt;Employer&gt;.Register(e =&gt; e.Name);
+
+    /// &lt;summary&gt;
+    /// 名称
+    /// &lt;/summary&gt;
+    public string Name
+    {
+        get { return this.GetProperty(NameProperty); }
+        set { this.SetProperty(NameProperty, value); }
+    }
+    #endregion
+
+    #region 单位类型-快码配置 
+    public const string CatalogType = &quot;UNIT_TYPE&quot;;
+    #endregion
+
+    #region 类型 Type
+    /// &lt;summary&gt;
+    /// 类型
+    /// &lt;/summary&gt;
+    [Label(&quot;类型&quot;)]
+    [Required]
+    public static readonly Property&lt;string&gt; TypeProperty = P&lt;Employer&gt;.Register(e =&gt; e.Type);
+
+    /// &lt;summary&gt;
+    /// 类型
+    /// &lt;/summary&gt;
+    public string Type
+    {
+        get { return this.GetProperty(TypeProperty); }
+        set { this.SetProperty(TypeProperty, value); }
+    }
+    #endregion
+
+  }
+  internal class EmployerConfig : EntityConfig&lt;Employer&gt; {
+    protected override void ConfigMeta()
+    {
+      Meta.MapTable(&quot;LIB_EMPLOYER&quot;).MapAllProperties();//映射数据库表
+      Meta.EnablePhantoms();
+    }
+  }
+}
+</code></pre></div><ul><li>创建视图类，继承自WebViewConfig&lt;目标实体类&gt;</li> <li>在SIE.Web.Lib工程下面新建文件夹，添加视图类</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>using SIE.Lib.Employers;
+using SIE.Web.Common;
+using SIE.Domain;
+namespace SIE.Web.Lib.Employers
+{
+    internal class EmployersViewConfig : WebViewConfig&lt;Employer&gt;
+  {
+    /// &lt;summary&gt;
+    /// 配置列表视图
+    /// &lt;/summary&gt;
+    protected override void ConfigListView()//列表执行的方法
+    {
+      View.UseDefaultCommands();//使用框架默认列表展示命令
+      View.Property(e =&gt; e.Code).Readonly(p =&gt; p.PersistenceStatus != Domain.PersistenceStatus.New);//非新增只读,PersistenceStatus：持久化状态，里面包含新增、修改、删除这些状态
+      //View.Prrperty(e =&gt;e.UnitPrecision).UsePagingLookUpEditor()
+      View.Property(e =&gt; e.Name);
+      View.Property(e =&gt; e.Type).DefaultValue(&quot;1&quot;).UseCatalogEditor(p =&gt; {
+        p.CatalogReloadData = true;//实时加载数据，false时，只有页面初始化时加载一次数据
+        p.CatalogType = Employer.CatalogType;//快码选择器类型
+        p.AllowBlank = false;//是否允许为空
+      });
+    }
+    /// &lt;summary&gt;
+    /// 配置列表视图
+    /// &lt;/summary&gt;
+    protected override void ConfigQueryView() {
+      View.UseDefaultCommands();//使用框架默认查询展示命令
+      View.Property(e =&gt; e.Code);
+      View.Property(e =&gt; e.Name);
+    }
+    /// &lt;summary&gt;
+    /// 下拉查询视图
+    /// &lt;/summary&gt;
+    /// 框架的所有下拉功能是通用的，可以定义下拉可以看到的属性ing
+    protected override void ConfigSelectionView()
+    {
+      View.Property(e =&gt; e.UnitPrecision);
+      View.Property(e =&gt; e.Code);
+      View.Property(e =&gt; e.Name);
+    }
+  }
+}
+</code></pre></div><ul><li>启动项目，需要在菜单里面更新对应的菜单；实体元数据更新数据库和备注</li></ul> <h2 id="主从表"><a href="#主从表" aria-hidden="true" class="header-anchor">#</a> 主从表</h2> <ul><li>主表在单表的基础上需要创建一个子表实体列作为自己的属性（EntityList）</li> <li>从表需要添加ChildEntity的特性，并且传进一个关联主表的属性</li> <li>主表实体类：</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>//主表
+using System;
+namespace SIE.Lib.Suppliers
+{
+  [RootEntity, Serializable]
+  [Label(&quot;供应商功能&quot;)]
+  public class Supplier : DataEntity
+  {
+    //从表属性EntityList
+    #endregion
+    //子表的实体配置
+    #region 物料列表 MaterialList
+    /// &lt;summary&gt;
+    /// 物料列表
+    /// &lt;/summary&gt;
+    [Label(&quot;物料列表&quot;)]
+    public static readonly ListProperty&lt;EntityList&lt;SupplierSmall&gt;&gt; MaterialListProperty = P&lt;Supplier&gt;.RegisterList(e =&gt; e.MaterialList);
+
+    /// &lt;summary&gt;
+    /// 物料列表
+    /// &lt;/summary&gt;
+    public EntityList&lt;SupplierSmall&gt; MaterialList
+    {
+      get { return this.GetLazyList(MaterialListProperty); }
+    }
+    #endregion
+
+  }
+  internal class SupplierConfig : EntityConfig&lt;Supplier&gt;
+  {
+      protected override void ConfigMeta()
+      {
+          Meta.MapTable(&quot;LIB_SUPPLIER&quot;).MapAllProperties();//映射到数据库表LIB_BOOK_CAT，并映射所有属性;MapAllProperties()方法会将实体的所有属性映射到数据库表的列中，列名与属性名相同;
+          Meta.EnablePhantoms();//启用假删除功能，允许实体在内存中存在，但不在数据库中存在
+      }
+  }
+}
+</code></pre></div><ul><li>子表</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>using System;
+namespace SIE.Lib.Suppliers
+{
+    [ChildEntity, Serializable]//子表的根实体，标记为ChildEntity
+    [Label(&quot;供应商物料&quot;)]
+    public class SupplierSmall : DataEntity
+    {
+      //主表关系配置
+      #region 供应商主表类 Supplier
+      /// &lt;summary&gt;
+      /// 供应商类
+      /// &lt;/summary&gt;
+      [Label(&quot;供应商类&quot;)]
+      public static readonly IRefIdProperty SupplierIdProperty =
+          P&lt;SupplierSmall&gt;.RegisterRefId(e =&gt; e.SupplierId, ReferenceType.Parent);
+
+      /// &lt;summary&gt;
+      /// 供应商类
+      /// &lt;/summary&gt;
+      public double SupplierId
+      {
+          get { return (double)this.GetRefId(SupplierIdProperty); }
+          set { this.SetRefId(SupplierIdProperty, value); }
+      }
+
+      /// &lt;summary&gt;
+      /// 供应商类
+      /// &lt;/summary&gt;
+      public static readonly RefEntityProperty&lt;Supplier&gt; SupplierProperty =
+          P&lt;SupplierSmall&gt;.RegisterRef(e =&gt; e.Supplier, SupplierIdProperty);
+
+      /// &lt;summary&gt;
+      /// 供应商类
+      /// &lt;/summary&gt;
+      public Supplier Supplier
+      {
+          get { return this.GetRefEntity(SupplierProperty); }
+          set { this.SetRefEntity(SupplierProperty, value); }
+      }
+      #endregion
+
+      //其他属性...
+    }
+    internal class SupplierSmallConfig : EntityConfig&lt;SupplierSmall&gt;
+    {
+        protected override void ConfigMeta()
+        {
+            Meta.MapTable(&quot;LIB_SUPPLIER_SMALL&quot;).MapAllProperties();//映射到数据库表LIB_BOOK_CAT，并映射所有属性;MapAllProperties()方法会将实体的所有属性映射到数据库表的列中，列名与属性名相同;
+            Meta.EnablePhantoms();//启用假删除功能，允许实体在内存中存在，但不在数据库中存在
+        }
+    }
+}
+</code></pre></div><h2 id="带关系的表"><a href="#带关系的表" aria-hidden="true" class="header-anchor">#</a> 带关系的表</h2> <ul><li>通过创建一个引用属性（Material），关联物料表的属性</li> <li>关联的物料属性可以实现下拉选择功能，同时也可以直接带出物料表里对应的物料名称属性（创建pfv视图属性）</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>using System;
+namespace SIE.Lib.Suppliers
+{
+    [ChildEntity, Serializable]//子表的根实体，标记为ChildEntity
+    [Label(&quot;供应商物料&quot;)]
+    public class SupplierSmall : DataEntity
+    {
+      //主表关系配置...
+
+      //子表关系配置,创建一个引用属性，关联物料表
+      #region 物料编码 Material
+      /// &lt;summary&gt;
+      /// 物料编码Id
+      /// &lt;/summary&gt;
+      [Label(&quot;物料编码&quot;)]
+      public static readonly IRefIdProperty MaterialIdProperty =
+          P&lt;SupplierSmall&gt;.RegisterRefId(e =&gt; e.MaterialId, ReferenceType.Normal);
+
+      /// &lt;summary&gt;
+      /// 物料编码Id
+      /// &lt;/summary&gt;
+      public double MaterialId
+      {
+          get { return (double)this.GetRefId(MaterialIdProperty); }
+          set { this.SetRefId(MaterialIdProperty, value); }
+      }
+
+      /// &lt;summary&gt;
+      /// 物料编码
+      /// &lt;/summary&gt;
+      public static readonly RefEntityProperty&lt;Material&gt; MaterialProperty =
+          P&lt;SupplierSmall&gt;.RegisterRef(e =&gt; e.Material, MaterialIdProperty);
+
+      /// &lt;summary&gt;
+      /// 物料编码
+      /// &lt;/summary&gt;
+      public Material Material
+      {
+          get { return this.GetRefEntity(MaterialProperty); }
+          set { this.SetRefEntity(MaterialProperty, value); }
+      }
+      #endregion
+
+      #region 物料名称 MaterialName
+      /// &lt;summary&gt;
+      /// 物料名称
+      /// &lt;/summary&gt;
+      [Label(&quot;物料名称&quot;)]
+      public static readonly Property&lt;string&gt; MaterialNameProperty = P&lt;SupplierSmall&gt;.RegisterView(e =&gt; e.MaterialName, p =&gt; p.Material.Name);
+
+      /// &lt;summary&gt;
+      /// 物料名称
+      /// &lt;/summary&gt;
+      public string MaterialName
+      {
+          get { return this.GetProperty(MaterialNameProperty); }
+      }
+      #endregion
+    }
+}
+</code></pre></div><h2 id="验证规则"><a href="#验证规则" aria-hidden="true" class="header-anchor">#</a> 验证规则</h2> <ul><li>有三种验证规则：标准规则、运行时规则、预编译规则</li> <li><strong>标准规则</strong>：标准规则是在实体配置(EntityConfig<T>)中重写AddValidations()方法实现规则验证;标准规则不可在实体元数据功能中配置，而是<strong>代码编写完成运行程序立马生效</strong>,不需要更新实体元数据。</T></li> <li><strong>运行时规则</strong>：通过在实体元数据模块进行运行时配置的规则(给实体<strong>添加特性</strong>,如：[Required])，如字段长度、非空等验证。运行时规则完全通过配置实现。需要在<strong>实体元数据中进行更新</strong>才会生效。</li> <li><strong>预编译规则</strong>:通过C#代码的方式实现验证规则，然后在实体元数据功能进行更新并配置启用;包含的规则子类：实体规则(继承EntityRule<T>)、非重复规则(继承NotDuplicateRule<T>)、删除被引用规则(继承NoReferencedRule<T>)。该规则也需要在<strong>实体元数据中进行更新</strong>才会生效。
+<ul><li>使用场景：常用来实现特定的验证提示与稍复杂的业务验证规则。</li></ul></T></T></T></li></ul> <h3 id="标准规则"><a href="#标准规则" aria-hidden="true" class="header-anchor">#</a> 标准规则</h3> <ul><li>标准规则可以实现的验证：
+<ul><li>非空验证，使用：rules.AddRule(属性名, new RequiredRule())</li> <li>非重复验证，单个和多个属性的非重复验证；</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>internal class SupplierSmallConfig : EntityConfig&lt;SupplierSmall&gt;
+{
+    protected override void ConfigMeta()
+    {
+        Meta.MapTable(&quot;LIB_SUPPLIER_SMALL&quot;).MapAllProperties();
+        Meta.EnablePhantoms();
+    }
+    protected override void AddValidations(ValidationRules rules)
+    {
+      base.AddValidations(rules);
+      //单个属性非重复验证
+      rules.AddRule(属性名, new NotDuplicateRule());
+    }
+}
+</code></pre></div><div class="language-cs extra-class"><pre class="language-text"><code>protected override void AddValidations(ValidationRules rules)
+{
+  base.AddValidations(rules);
+  //多个属性非重复验证
+  rules.AddRule(new NotDuplicateRule()
+  {
+      Properties =
+      {
+          属性名1,
+          属性名2
+      },
+      MessageBuilder = (e) =&gt;
+      {
+          return &quot;验证不通过的提示信息&quot;.L10N();
+      }
+  });
+}
+</code></pre></div><ul><li>长度验证，包括最小和最大长度的设置：</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>protected override void AddValidations(ValidationRules rules)
+{
+  base.AddValidations(rules);
+  rules.AddRule(属性名, new StringLengthRangeRule() { Min = 2, Max = 40 });
+}
+</code></pre></div><ul><li>最大最小值验证：</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>protected override void AddValidations(ValidationRules rules)
+{
+  base.AddValidations(rules);
+  rules.AddRule(属性名, new NumberRangeRule() { Min = 1, Max = 100 });
+}
+</code></pre></div><ul><li>正则表达式验证:</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>protected override void AddValidations(ValidationRules rules)
+{
+  base.AddValidations(rules);
+  rules.AddRule(属性名1, new RegexMatchRule()
+  {
+    Regex = new Regex(@&quot;^((\d{3}-\d{8}|\d{4}-\d{7,8})|(0?(13|14|15|17|18|19)[0-9]{9}))$&quot;),
+    MessageBuilder = (o) =&gt;
+    {
+      return &quot;电话号码格式不正确&quot;;
+    }
+  });
+  rules.AddRule(属性名2, new RegexMatchRule()
+  {
+    Regex = new Regex(@&quot;^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$&quot;),
+    MessageBuilder = (o) =&gt;
+    {
+      return &quot;邮箱格式不正确&quot;;
+    }
+  });
+}
+</code></pre></div><ul><li>实体验证：</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>protected override void AddValidations(ValidationRules rules)
+{
+  base.AddValidations(rules);
+  rules.AddRule(new HandlerRule()//等同于预编译规则的 new EntityRule&lt;实体类&gt;()
+  {
+    Handler = (o, e) =&gt;
+    {    //这里可以进行查数据库进行操作，当前实体的数据不能满足验证判断要求时可查数据库判断
+    var reader = o.CastTo&lt;实体类&gt;();
+    if (判断的条件)
+      e.BrokenDescription = “具体的验证提示信息&quot;.L10nFormat(reader.Name);
+    }
+  });
+}
+</code></pre></div></li></ul> <h3 id="运行时规则"><a href="#运行时规则" aria-hidden="true" class="header-anchor">#</a> 运行时规则</h3> <ul><li>通过在实体元数据模块进行运行时配置的规则，如字段长度、非空等验证。运行时规则完全通过配置实现。</li> <li>运行时规则还可以通过在实体属性中标记特性来实现的，完成后要进行实体元数据的初始化，在实体元数据菜单的实体规则可以配置启用和禁用，默认初始化完成后都是启用状态。</li> <li>常用的规则特性有：
+<ul><li>[Required]：非空验证</li> <li>[NotDuplicate]：非重复验证</li> <li>[MaxLength(10)]：最大长度验证</li> <li>[MinLength(3)]：最小长度验证</li> <li>[MaxValue(100)]：最大值验证</li> <li>[MinValue(1)]：最小值验证</li></ul></li></ul> <h3 id="预编译规则"><a href="#预编译规则" aria-hidden="true" class="header-anchor">#</a> 预编译规则</h3> <ul><li><p>通过C#代码的方式实现验证规则，然后在实体元数据功能进行更新并配置启用。
+包含的规则子类：实体规则(继承EntityRule<T>)、非重复规则(继承NotDuplicateRule<T>)、删除被引用规则(继承NoReferencedRule<T>)。</T></T></T></p></li> <li><p>在服务端新建一个规则类，命名以Rule结尾。</p></li> <li><p>实体规则继承EntityRule&lt;对应操作的实体&gt;，完成后对该规则进行特性的标记</p></li> <li><p>重写验证规则的方法，在验证规则方法中实现具体的业务逻辑</p></li> <li><p>初始化元数据，完成后在界面中进行验证</p> <ul><li>使用场景：常用来实现特定的验证提示与稍复杂的业务验证规则。</li> <li>继承EntityRule<T>,在这个规则中可以实现所有规则。</T></li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>namespace SIE.Lib.Suppliers
+{
+  /// &lt;summary&gt;
+  /// 同一供应商下，不可存在重复的物料
+  /// &lt;/summary&gt;
+  /// 因为不在一个实体里面，不知道能否校验成功
+  [DisplayName(&quot;同一供应商下，不可存在重复的物料&quot;)]
+  [Description(&quot;同一供应商下，不可存在重复的物料&quot;)]
+  public class SupplierSmallRuler : NotDuplicateRule&lt;SupplierSmall&gt;
+  {
+      public SupplierSmallRuler()
+      {
+          Properties.Add(SupplierSmall.SupplierIdIdProperty);
+          Properties.Add(SupplierSmall.MaterialIdProperty);
+      }
+  }
+
+  /// &lt;summary&gt;
+  /// 自定义规则校验实体EntityRule
+  /// &lt;/summary&gt;
+  [DisplayName(&quot;手机号规则校验&quot;)]
+  [Description(&quot;手机号正则表达式规则校验&quot;)]
+  public class SupplierRefPhoneRuler : EntityRule&lt;Supplier&gt;
+  {
+      public SupplierRefPhoneRuler() { 
+          Property = Supplier.ContactPhoneProperty;//校验触发条件，PhoneProperty属性
+          ConnectToDataSource = false;//ConnectToDataSource默认值为false，如果是在Validate方法中有差数据库的操作，则需要把该属性设置为true
+      }
+      protected override void Validate(IEntity entity, RuleArgs e)
+      { 
+          var reader = entity as Supplier;
+          //手机正则表达式校验逻辑实现
+          if (!reader.ContactPhone.IsNullOrWhiteSpace())
+          {
+              string phoneRule = @&quot;^((\d{3}-\d{8}|\d{4}-\d{7,8})|(0?(13|14|15|17|18|19)[0-9]{9}))$&quot;;
+              Regex phoneRegx = new Regex(phoneRule);
+              var matches = phoneRegx.IsMatch(reader.ContactPhone);
+              if (!matches)
+              {
+                  //校验失败需要赋值给BrokenDescription
+                  e.BrokenDescription = &quot;手机号[{0}]格式不正确&quot;.L10nFormat(reader.ContactPhone);
+              }
+          }
+      }
+  }
+}
+</code></pre></div><ul><li>校验不允许删除示例：</li> <li>调用控制器的方法实现：RT.Service.Resolve&lt;具体的控制器&gt;().方法名(参数)</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>/// &lt;summary&gt;
+/// 单位被物料引用不允许删除
+/// &lt;/summary&gt;
+[DisplayName(&quot;单位被物料引用不允许删除&quot;)]
+[Description(&quot;单位被物料引用不允许删除校验逻辑&quot;)]
+public class MaterialRefUnitRuler : NoReferencedRule&lt;Employer&gt;
+{
+    //构造函数
+    public MaterialRefUnitRuler() { 
+        Scope = EntityStatusScopes.Add | EntityStatusScopes.Update;//校验触发条件，新增或者修改时校验，Scope如果不指定，默认值是AddOrUpdate
+        ConnectToDataSource = true; //是否需要链接数据库
+    }
+    //重写验证规则的方法,存在物料引用则提示不能删除
+    protected override void Validate(IEntity entity, RuleArgs e)
+    { 
+      var reader = entity as Employer;
+      if(RT.Service.Resolve&lt;MaterialController&gt;().IsExistMaterial(reader.Id))//获取物料里是否存在当前单位
+      {
+        e.BrokenDescription = &quot;单位[{0}]被物料引用不允许删除&quot;.L10nFormat(reader.Name);
+      }
+    }
+}
+</code></pre></div><ul><li>说明：控制必须建在服务端，且是部分类，继承自DomainController，控制器的方法必须是虚方法(virtual)</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>public partial class MaterialController : DomainController
+{
+  public virtual bool IsExistMaterial(Guid employerId)
+  {
+    if(employerId &lt;= 0 ){
+      throw new ArgumentNullException(nameof(employerId));
+    }
+    var query = new Query&lt;Material&gt;();
+    query.Where(x =&gt; x.EmployerId == employerId);
+    return query.Count() &gt; 0;
+  }
+}
+</code></pre></div><ul><li>非重复验证使用示例</li> <li>当设置一个字段时，则只对实体的一个字段值在数据库中进行验证，如果设置多个字段值时，则将实体多个字段值在数据库中验证。</li> <li>在构造函数中，通过<strong>Properties.Add</strong>方法同，添加判断重复的字段，可以添加一个或者多个字段，例如编码字段Code不能重复，则只需要添加Code字段。如多个字段时，则是将多个字段的值合起来一起判断。</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>/// &lt;summary&gt;
+/// 同一供应商下，不可存在重复的物料
+/// &lt;/summary&gt;
+/// 因为不在一个实体里面，不知道能否校验成功
+[DisplayName(&quot;同一供应商下，不可存在重复的物料&quot;)]
+[Description(&quot;同一供应商下，不可存在重复的物料&quot;)]
+public class SupplierSmallRuler : NotDuplicateRule&lt;SupplierSmall&gt;
+{
+    public SupplierSmallRuler()
+    {
+        Properties.Add(SupplierSmall.SupplierIdIdProperty);
+        Properties.Add(SupplierSmall.MaterialIdProperty);
+        MessageBuilder = (e)=&gt;
+        {
+          var entity = e.Entity as SupplierSmall;
+          return &quot;同一供应商下，不可存在重复的物料，已存在[{0}]的供应商[{1}]&quot;.L10nFormat(entity.MaterialId,entity.SupplierIdId);
+        }
+    }
+}
+</code></pre></div><ul><li>删除验证使用示例</li> <li>在服务端新建一个规则类，命名以Rule结尾</li> <li>删除验证继承NoReferencedRule&lt;具体操作的实体&gt;</li> <li>删除规则类建完之后，在类上面标记特性，对该规则类进行说明</li> <li>完成后对该删除规则做业务逻辑的验证，验证在删除规则的<strong>构造函数中实现</strong></li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>/// &lt;summary&gt;
+/// 单位被物料引用不允许删除
+/// &lt;/summary&gt;
+[DisplayName(&quot;单位被物料引用不允许删除&quot;)]
+[Description(&quot;单位被物料引用不允许删除校验逻辑&quot;)]
+public class MaterialRefUnitRuler : NoReferencedRule&lt;Employer&gt;
+{
+    public MaterialRefUnitRuler() { 
+        Properties.Add(Material.UnitIdProperty);
+        MessageBuilder = (e, c) =&gt; {
+            var entity = e as Employer;
+            return &quot;单位[{0}]被物料引用不允许删除&quot;.L10nFormat(entity.UnitPrecision, c);
+        };
+    }
+}
+</code></pre></div><ul><li>非空验证使用示例</li> <li>非空验证，在保存实体时，平台对设置的实体字段进行判空验证。如果字段值为空，则系统在保存时会报验证错误提示。</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>///&lt;summary&gt;
+///班级名称不能为空
+///&lt;/summary&gt;
+[System.ComponentModel.MaterialName (&quot;物料名称不能为&quot;)]
+[System.ComponentModel.Description(&quot;物料名称不能为空&quot;)]
+public class RequiredName : RequireRule&lt;SchoolClass&gt;
+{
+  ///&lt;summary&gt;
+  ///选择实体适用规则
+  /// &lt;/summary&gt;
+  protected override IManagedProperty Property
+  {
+    get {
+      return Materials.NameProperty;//
+    }
+  }
+}
+</code></pre></div></li></ul> <h3 id="后端验证通用说明"><a href="#后端验证通用说明" aria-hidden="true" class="header-anchor">#</a> 后端验证通用说明</h3> <ul><li>标准验证AddValidations和预编译验证(在服务端编写验证规则类)是两种不一样的实现方式，同一逻辑用两种方式验证的效果是一样的，只是其中一种是代码所见即所得，一种是可配置；</li> <li>在项目上对应的验证逻辑，能用标准规则验证就不要使用其他的验证，主要原因是实体元数据更新执行效率比较低；</li> <li>非重复验证尽量使用框架非重复的子类进行验证，不要在实体规则中进行验证，原因是写的逻辑比较多，还有可能写漏，用框架的非重复验证会简单很多，也避免一些不必要的bug出现；</li> <li>被引用不允许删除尽量使用框架的，原因与非重复验证一致；</li> <li>String类型的长度验证，框架默认配置的长度是20，如果有些字段需要设置为其他的长度限制，需要自己手动设置，如果框架string类型的长度限制都需要调整，可以在配置文件中配置DefaultFieldMaximumLength。</li></ul> <h3 id="前端验证规则"><a href="#前端验证规则" aria-hidden="true" class="header-anchor">#</a> 前端验证规则</h3> <ul><li>新增、修改命令调用前端验证方法是在showView方法中调用this.validateData(view)，其中view为当前操作视图</li> <li>保存方法调用前端验证是在onSaving方法中调用onValidation(view)，view为当前操作视图</li></ul> <h3 id="根据条件控制前端规则"><a href="#根据条件控制前端规则" aria-hidden="true" class="header-anchor">#</a> 根据条件控制前端规则</h3> <ul><li>只表单编辑时可用，需要重写命令</li> <li>如果重写的命令中重写了showView方法，需要手动给_editingView赋值（是全局的，当前表单编辑的view，后面更改表单控件的属性会用的）,还需要手动去调用验证方法（如果没有调用要点击到对应的控件，控件提示验证才会生效）</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">showView</span><span class="token punctuation">(</span><span class="token parameter">view</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+  <span class="token keyword">var</span> me <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token comment">//...</span>
+  me<span class="token punctuation">.</span>_editingView <span class="token operator">=</span> view<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">validateData</span><span class="token punctuation">(</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>在对应的方法中实现验证，下面例子是在属性变更事件中根据条件控制某个控件是必填还是非必填|设置不同的属性</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">_onEntityPropertyChanged</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+  <span class="token keyword">if</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>property<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>property<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">&quot;Name&quot;</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">var</span> data <span class="token operator">=</span> e<span class="token punctuation">.</span>rntity
+      <span class="token keyword">if</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>value <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        data<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+        <span class="token comment">//...</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_editingView<span class="token punctuation">.</span>getControl<span class="token punctuation">.</span><span class="token function">getForm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">&quot;xxxName&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            item<span class="token punctuation">.</span>allowEmpty <span class="token operator">=</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            item<span class="token punctuation">.</span>allowEmpty <span class="token operator">=</span> <span class="token boolean">false</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>_editingView<span class="token punctuation">.</span>getControl<span class="token punctuation">.</span><span class="token function">getForm</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">&quot;xxxName&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            item<span class="token punctuation">.</span>allowEmpty <span class="token operator">=</span> <span class="token boolean">false</span>
+          <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            item<span class="token punctuation">.</span>allowEmpty <span class="token operator">=</span> <span class="token boolean">true</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>_editingView<span class="token punctuation">.</span><span class="token function">validateData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="提交事件"><a href="#提交事件" aria-hidden="true" class="header-anchor">#</a> 提交事件</h2> <ul><li>提交事件建在服务端，而且在第一次使用或者修改了对应的事件，都<strong>必须初始化元数据</strong>才会生效。</li> <li>提交事件使用场景：针对某个菜单功能的通用处理逻辑，可用在提交事件中进行处理。</li> <li>提交事件分为提交前和提交后事件：
+<ul><li>提交前事件，是在保存这个实体对象之前调用的；</li> <li>提交后事件，是在保存这个实体对象之后调用的；</li></ul></li></ul> <h3 id="提交前事件"><a href="#提交前事件" aria-hidden="true" class="header-anchor">#</a> 提交前事件</h3> <ul><li>在服务端新建一个类，命名以OnSubmitting结尾，继承OnSubmitting，OnSubmitting后面跟对应的操作实体,</li> <li>SuppliersOnSubmitting报错需要根据提示选择<strong>实现抽象类</strong></li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>using SIE.Domain;
+using System;
+namespace SIE.Lib.Suppliers
+{
+    public class SuppliersOnSubmitting : OnSubmitting&lt;Supplier&gt;
+    {
+        /// &lt;summary&gt;
+        /// 供应商提交前事件处理
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;entity&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;e&quot;&gt;&lt;/param&gt;
+        protected override void Invoke(Supplier entity, EntitySubmittedEventArgs e)
+        {
+            Console.WriteLine(&quot;供应商提交前事件处理&quot;);
+            //判断类型是新增或者更新
+            if (e.Action == SubmitAction.Insert || e.Action == SubmitAction.Update) {
+                SupplierAddress supAddress = entity.GetProperty(SupplierAddressExtention.SupAddressProperty);
+                if (supAddress != null &amp;&amp; supAddress.SupplierId == 0) {
+                    supAddress.SupplierId = entity.Id;
+                    supAddress.Supplier = entity;var existingAddress = RT.Service.Resolve&lt;SuppliersController&gt;().GetSupAddress(entity.Id);
+                    if (existingAddress == null)
+                    {
+                        // 不存在，设为新建状态
+                        supAddress.PersistenceStatus = PersistenceStatus.New;
+                    }
+                    RF.Save(supAddress);
+                }
+                else if (supAddress !=null &amp;&amp; supAddress.SupplierId &gt; 0)
+                {
+                    RF.Save(supAddress);
+                }
+            }
+        }
+    }
+}
+</code></pre></div><h3 id="提交后事件"><a href="#提交后事件" aria-hidden="true" class="header-anchor">#</a> 提交后事件</h3> <ul><li>在服务端新建一个类，命名以OnSubmitted结尾，继承OnSubmitted，OnSubmitted后面跟对应的操作实体</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>using SIE.Domain;
+using System.Linq;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace SIE.Lib.Suppliers
+{
+    public class SuppliersOnSubmitted : OnSubmitted&lt;Supplier&gt;
+    {
+        /// &lt;summary&gt;
+        /// 供应商提交后事件处理
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;entity&quot;&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;e&quot;&gt;&lt;/param&gt;
+        protected override void Invoke(Supplier entity, EntitySubmittedEventArgs e)
+        {
+            //判断类型是新增或者更新
+            if (e.Action == SubmitAction.Insert || e.Action == SubmitAction.Update) {
+                SupplierAddress supAddress = entity.GetProperty(SupplierAddressExtention.SupAddressProperty);
+                if (supAddress != null &amp;&amp; supAddress.SupplierId == 0) {
+                    supAddress.SupplierId = entity.Id;
+                    supAddress.Supplier = entity;
+                    var existingAddress = RT.Service.Resolve&lt;SuppliersController&gt;().GetSupAddress(entity.Id);
+                    if (existingAddress == null)
+                    {
+                        // 不存在，设为新建状态
+                        supAddress.PersistenceStatus = PersistenceStatus.New;
+                    }
+                    RF.Save(supAddress);
+                }
+                else if (supAddress !=null &amp;&amp; supAddress.SupplierId &gt; 0)
+                {
+                    RF.Save(supAddress);
+                }
+            }
+            if (e.Action == SubmitAction.Delete) { 
+                var address = RT.Service.Resolve&lt;SuppliersController&gt;().GetSupAddress(entity.Id);
+                if (address != null) {
+                    address.PersistenceStatus = PersistenceStatus.Deleted;
+                    RF.Save(address);
+                }
+            }
+
+        }
+    }
+
+}
+</code></pre></div><h3 id="提交事件注意事项"><a href="#提交事件注意事项" aria-hidden="true" class="header-anchor">#</a> 提交事件注意事项</h3> <ul><li>提交前、提交后事件使用要生效，必须进行<strong>实体元数据更新</strong>，状态为可用；</li> <li>每次修改了提交前或者提交后事件，也必须进行实体元数据的更新；</li> <li>提交事件后台代码删除，在实体元数据对应提交事件子列表的数据不会删除，需要手动去提交事件子页签将对应数据禁用，或者是在后台数据库将数据删除。
+<ul><li>提交事件的表为：MDA_ENTITY_SUBMIT_EVENT，通过DISCRIMINATOR区分为提交前后事件；</li> <li>DISCRIMINATOR=‘A’，为提交前事件；</li> <li>DISCRIMINATOR=‘B’，为提交后事件；</li></ul></li> <li>提交事件后台的类名修改了，修改之前通过“更新”生成的提交事件对应的数据程序不会删除，会重新再生成一笔数据；也就是提交事件在“更新”之后修改了类名，需要把修改类名之前的数据禁用或者从数据库中删除。</li> <li>如果是通过DB操作的数据，或者是批量保存，不会执行对应的验证规则。</li></ul> <h2 id="api接口"><a href="#api接口" aria-hidden="true" class="header-anchor">#</a> API接口</h2> <ul><li>数据推送接口的定义：</li> <li>接口协议：RestFul API</li> <li>方法名：Login</li> <li>请求方式（Method）：POST</li> <li>参数形式（Content Type）：application/json</li> <li>描述：第三方用户调用此接口获取数据</li> <li>参数：</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>{
+&quot;ApiType&quot;: &quot;AuthenticationController&quot;,
+  &quot;Parameters&quot;: [
+    {
+      &quot;Value&quot;: &quot;str&quot;
+    },
+    {
+      &quot;Value&quot;: &quot;str&quot;
+    }
+  ],
+  &quot;Method&quot;: &quot;Login&quot;,
+  &quot;Context&quot;: {}
+}
+</code></pre></div><ul><li>参数描述:参数内容需符合JSON格式，JSON串中的键仅允许26个小写英文字母、阿拉伯数字和下划线，且必须以小写字母开头，当键由多个单词组成时，单词与单词之间通过下划线进行连接，如未特别说明，本规范中定义的各字段的命名不能修改，最大封装Json包100KB。
+<ul><li>ApiType：控制器名称</li> <li>Parameters：参数</li> <li>Method：方法名称</li> <li>Context：上下文内容</li></ul></li> <li>返回值：</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>//成功返回值
+{
+  &quot;Success&quot;: true,
+  &quot;Message&quot;: null,
+  &quot;Result&quot;: 0,
+  &quot;Context&quot;: {
+    &quot;Ticket&quot;: &quot;XXX&quot;
+  }
+}
+//错误返回值
+{
+  &quot;Success&quot;: false,
+  &quot;Message&quot;: “错误信息”,
+  &quot;Result&quot;: 1,
+  &quot;Context&quot;: {
+    &quot;Ticket&quot;: &quot;&quot;
+  }
+}
+</code></pre></div><ul><li>返回值描述:
+<ul><li>Json格式，</li> <li>Success是否成功：true成功，false失败；</li> <li>Message错误信息；</li> <li>Result返回状态，0成功，1失败；</li> <li>Context内容：Ticket是凭证，在登录成功的时候MES会生成一个Ticket，此Ticket在非匿名方法的时候必须作为参数传入MES。</li></ul></li> <li>备注:每个Ticket有效期默认为30分钟。</li></ul> <h2 id="框架api的使用"><a href="#框架api的使用" aria-hidden="true" class="header-anchor">#</a> 框架Api的使用</h2> <ul><li>说明：
+<ul><li>api方法与普通方法的区别，api方法多了api标记的特性</li> <li>ApiService：api开放接口标记</li> <li>ApiReturn：api开放接口返回值</li> <li>ApiParameter：api开放接口参数说明</li></ul></li> <li>方法标记了ApiService，在运行host或者是部署成服务后，可以在api中查到对应的方法、请求格式和返回值，其他系统也可访问调用对应服务的api方法。</li> <li>查看写好的api接口：查看api，以本地调试为例，在SIE.WebApiHost中将写api方法的工程引用进来。</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>// &lt;summary&gt;
+/// 查询修改或者新增单位
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;request&quot;&gt;&lt;/param&gt;
+[ApiService(&quot;修改或者新增单位&quot;)]//api标记
+[return: ApiReturn(&quot;修改或者新增单位&quot;)]//api返回值
+public virtual void QueryOrAddUnit([ApiParameter(&quot;查询对象&quot;)] QueryOrAddUnitRequest request)//ApiParameter标记api参数
+{
+    var queryRequest = new QueryOrAddUnitRequest()
+    {
+        Code = request.Code,
+        Name = request.Name,
+        Type = request.Type,
+        UnitPrecision = request.UnitPrecision
+    };
+    //var Unit = GetById&lt;Employer&gt;(queryRequest.Code);
+    var query = Query&lt;Employer&gt;();
+    var employers = query.Where(p =&gt; p.Code.Contains(queryRequest.Code)).ToList();
+    if (employers != null)
+    {
+        foreach (var employer in employers)
+        {
+            employer.Name = queryRequest.Name;
+            employer.Type = queryRequest.Type;
+            employer.UnitPrecision = queryRequest.UnitPrecision;
+        }
+        RF.Save(employers);//保存
+    }
+    else {
+        var NewEmployer = new Employer()
+        {
+            Code = queryRequest.Code,
+            Name = queryRequest.Name,
+            Type = queryRequest.Type,
+            UnitPrecision = queryRequest.UnitPrecision
+        };
+        RF.Save(NewEmployer);//保存
+    }
+}
+</code></pre></div><h2 id="图片排列"><a href="#图片排列" aria-hidden="true" class="header-anchor">#</a> 图片排列</h2> <ul><li>图片编辑器，实体属性类型为byte[]。</li> <li>常用参数：Width（宽）、 Height（高）; Border（边框）</li> <li>示例：</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>//属性
+#region 图片 Photo
+/// &lt;summary&gt;
+/// 图片
+/// &lt;/summary&gt;
+[Label(&quot;图片&quot;)]
+public static readonly Property&lt;byte[]&gt; PhotoProperty = P&lt;Supplier&gt;.Register(e =&gt; e.Photo);
+
+/// &lt;summary&gt;
+/// 图片
+/// &lt;/summary&gt;
+public byte[] Photo
+{
+    get { return this.GetProperty(PhotoProperty); }
+    set { this.SetProperty(PhotoProperty, value); }
+}
+#endregion
+</code></pre></div><ul><li>视图配置：</li></ul> <div class="language-cs extra-class"><pre class="language-text"><code>
+protected override void ConfigListView()//列表视图配置
+{
+  View.UseDefaultCommands();
+  View.FormEdit();//启用表单编辑
+  //列表视图配置，没有现成的编辑器，需要自定义一个JS的文件，来实现图片的编辑，下面一“ImageSourceScript”为例。
+  View.Property(e =&gt; e.Photo).UseTextEditor(p =&gt; p.ColumnXType = &quot;ImageSourceScript&quot;).ShowInList(width: 120);
+}
+protected override void ConfigDetailsView()//表单编辑视图配置
+{
+  //表单编辑视图配置。表单的图片编辑器
+  View.Property(p =&gt; p.Photo).UseImageComponentEditor(p =&gt; { p.Width = 300; p.Height = 400; p.Border = 1; }).ShowInDetail(rowSpan: 10)
+}
+</code></pre></div><ul><li>图片编辑器ImageSourceScript的脚本配置：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//图片脚本文件必须设置为**嵌入资源**，否则不会生效</span>
+Ext<span class="token punctuation">.</span><span class="token function">define</span><span class="token punctuation">(</span><span class="token string">'SIE.Web.Lib.ScriptFiles.ImageSourceScript'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token comment">//自定义列类型</span>
+    extend<span class="token punctuation">:</span> <span class="token string">'Ext.grid.column.Column'</span><span class="token punctuation">,</span><span class="token comment">//继承自Ext.Js的grid列</span>
+    alias<span class="token punctuation">:</span> <span class="token string">'widget.ImageSourceScript'</span><span class="token punctuation">,</span><span class="token comment">//别名，方便在grid中使用</span>
+    <span class="token function-variable function">renderer</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">value<span class="token punctuation">,</span> metaData<span class="token punctuation">,</span> record<span class="token punctuation">,</span> rowIndex<span class="token punctuation">,</span> colIndex<span class="token punctuation">,</span> store<span class="token punctuation">,</span> view</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//渲染函数，返回一个img标签</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment">//value就是byte[]里面的值</span>
+            <span class="token keyword">return</span> <span class="token string">&quot;&lt;img src='&quot;</span> <span class="token operator">+</span> value <span class="token operator">+</span> <span class="token string">&quot;' style='width: 40px; height: 40px;'&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="快码"><a href="#快码" aria-hidden="true" class="header-anchor">#</a> 快码</h2> <ul><li>实体类型类型为string。</li> <li>视图配置常用参数：AllowBlank（是否允许为空）、CatalogReloadData（是否实时加载数据）、CatalogType（快码类型）</li></ul> <h2 id="固定列、默认值"><a href="#固定列、默认值" aria-hidden="true" class="header-anchor">#</a> 固定列、默认值</h2> <h2 id="禁用、启用"><a href="#禁用、启用" aria-hidden="true" class="header-anchor">#</a> 禁用、启用</h2> <h2 id="下拉数据源"><a href="#下拉数据源" aria-hidden="true" class="header-anchor">#</a> 下拉数据源</h2></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">10/8/2026, 10:01:59 AM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/base/JAVA.html" class="prev">
+          JAVA学习指南
+        </a></span> <span class="next"><a href="/base/SMOMPro.html">
+          .NET框架 SMOM项目学习2
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.4b8619cd.js" defer></script><script src="/assets/js/12.541b48df.js" defer></script>
+  </body>
+</html>
