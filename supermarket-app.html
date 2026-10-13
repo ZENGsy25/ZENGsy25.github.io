@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>超市购物</title>
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/vant/4.9.15/index.min.css">
+  <style>
+    html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0;
+      background: #f7f8fa;
+    }
+
+    :root {
+      --van-sidebar-selected-border-color: #ee0a24;
+      --van-sidebar-selected-text-color: #ee0a24;
+      --van-card-price-color: #ee0a24;
+      --van-card-price-font-size: 16px;
+    }
+
+    .page {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      max-width: 430px;
+      margin: 0 auto;
+      background: #f7f8fa;
+    }
+
+    .page-body {
+      flex: 1;
+      min-height: 0;
+      display: flex;
+    }
+
+    .cats {
+      width: 88px;
+      flex: 0 0 88px;
+      overflow-y: auto;
+      background: #f7f8fa;
+    }
+
+    .goods {
+      flex: 1;
+      min-width: 0;
+      overflow-y: auto;
+      background: #fff;
+      padding-bottom: 60px;
+    }
+
+    .panel {
+      flex: 1;
+      min-width: 0;
+      overflow-y: auto;
+      padding-bottom: 120px;
+    }
+
+    .thumb {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+
+    .van-search {
+      padding: 8px 12px;
+    }
+
+    .van-sidebar {
+      width: 88px;
+    }
+
+    .van-card {
+      background: #fff;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .van-card__header {
+      flex: 1;
+      min-width: 0;
+      align-items: center;
+    }
+
+    .van-card__footer {
+      flex-shrink: 0;
+      margin: 0;
+      padding: 0 16px 0 0;
+    }
+
+    .van-tabbar,
+    .van-submit-bar {
+      left: 50%;
+      right: auto;
+      width: 100%;
+      max-width: 430px;
+      transform: translateX(-50%);
+    }
+
+    .van-submit-bar {
+      bottom: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.4.21/vue.global.prod.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/vant/4.9.15/vant.min.js"></script>
+  <script>
+    var STORAGE_CART = 'supermarket-cart'
+    var STORAGE_ORDERS = 'supermarket-orders'
+    var GOODS = [
+      { id: 1, cat: '厨卫用品', name: '抽纸整箱', spec: '128抽 · 24包', price: 32, unit: '箱', emoji: '🧻', bg: 'linear-gradient(145deg,#fff7ed,#fdba74)' },
+      { id: 2, cat: '厨卫用品', name: '洗洁精', spec: '1.5kg · 柠檬香', price: 12, unit: '瓶', emoji: '🧴', bg: 'linear-gradient(145deg,#ecfeff,#67e8f9)' },
+      { id: 3, cat: '厨卫用品', name: '垃圾袋', spec: '中号 · 100只', price: 9.9, unit: '卷', emoji: '🗑️', bg: 'linear-gradient(145deg,#f8fafc,#cbd5e1)' },
+      { id: 4, cat: '厨卫用品', name: '钢丝球', spec: '不锈钢 · 6只装', price: 6.8, unit: '袋', emoji: '⚪', bg: 'linear-gradient(145deg,#f1f5f9,#94a3b8)' },
+      { id: 5, cat: '洗漱用品', name: '牙膏套装', spec: '120g · 薄荷', price: 16, unit: '支', emoji: '🪥', bg: 'linear-gradient(145deg,#eff6ff,#93c5fd)' },
+      { id: 6, cat: '洗漱用品', name: '洗发水', spec: '500ml · 清爽', price: 39, unit: '瓶', emoji: '🫧', bg: 'linear-gradient(145deg,#fdf4ff,#d8b4fe)' },
+      { id: 7, cat: '洗漱用品', name: '沐浴露', spec: '800ml · 花香', price: 28, unit: '瓶', emoji: '🚿', bg: 'linear-gradient(145deg,#fff1f2,#fda4af)' },
+      { id: 8, cat: '洗漱用品', name: '毛巾', spec: '纯棉 · 两条装', price: 22, unit: '份', emoji: '🧺', bg: 'linear-gradient(145deg,#f0fdf4,#86efac)' },
+      { id: 9, cat: '肉类', name: '五花肉', spec: '精选猪五花', price: 28, unit: '斤', emoji: '🥓', bg: 'linear-gradient(145deg,#fff1f2,#fb7185)' },
+      { id: 10, cat: '肉类', name: '鸡翅中', spec: '新鲜冷冻', price: 22, unit: '斤', emoji: '🍗', bg: 'linear-gradient(145deg,#fff7ed,#fdba74)' },
+      { id: 11, cat: '肉类', name: '牛肉卷', spec: '火锅肥牛', price: 45, unit: '盒', emoji: '🥩', bg: 'linear-gradient(145deg,#fef2f2,#f87171)' },
+      { id: 12, cat: '肉类', name: '鲜虾', spec: '大号 · 约20只', price: 58, unit: '盒', emoji: '🦐', bg: 'linear-gradient(145deg,#fff7ed,#fb923c)' },
+      { id: 13, cat: '蔬菜', name: '白菜', spec: '新鲜当季', price: 2.5, unit: '斤', emoji: '🥬', bg: 'linear-gradient(145deg,#f0fdf4,#86efac)' },
+      { id: 14, cat: '蔬菜', name: '西红柿', spec: '沙瓤 · 约4个', price: 6.8, unit: '斤', emoji: '🍅', bg: 'linear-gradient(145deg,#fef2f2,#fb7185)' },
+      { id: 15, cat: '蔬菜', name: '黄瓜', spec: '脆嫩 · 约3根', price: 4.5, unit: '斤', emoji: '🥒', bg: 'linear-gradient(145deg,#f0fdf4,#4ade80)' },
+      { id: 16, cat: '蔬菜', name: '土豆', spec: '黄心 · 约5个', price: 3.2, unit: '斤', emoji: '🥔', bg: 'linear-gradient(145deg,#fffbeb,#fbbf24)' },
+      { id: 17, cat: '水果', name: '红富士苹果', spec: '脆甜 · 约4个', price: 12, unit: '斤', emoji: '🍎', bg: 'linear-gradient(145deg,#fef2f2,#f87171)' },
+      { id: 18, cat: '水果', name: '香蕉', spec: '进口香甜', price: 5.8, unit: '斤', emoji: '🍌', bg: 'linear-gradient(145deg,#fefce8,#facc15)' },
+      { id: 19, cat: '水果', name: '阳光玫瑰', spec: '青提 · 2斤装', price: 29.9, unit: '盒', emoji: '🍇', bg: 'linear-gradient(145deg,#faf5ff,#c084fc)' },
+      { id: 20, cat: '水果', name: '橙子', spec: '脐橙 · 约5个', price: 9.9, unit: '斤', emoji: '🍊', bg: 'linear-gradient(145deg,#fff7ed,#fb923c)' },
+      { id: 21, cat: '其他', name: '鸡蛋', spec: '鲜鸡蛋 30枚', price: 18, unit: '盒', emoji: '🥚', bg: 'linear-gradient(145deg,#fffbeb,#fde68a)' },
+      { id: 22, cat: '其他', name: '纯牛奶', spec: '250ml × 12盒', price: 42, unit: '箱', emoji: '🥛', bg: 'linear-gradient(145deg,#f8fafc,#e2e8f0)' },
+      { id: 23, cat: '其他', name: '方便面', spec: '红烧牛肉 5连包', price: 11.5, unit: '袋', emoji: '🍜', bg: 'linear-gradient(145deg,#fff7ed,#fdba74)' },
+      { id: 24, cat: '其他', name: '矿泉水', spec: '550ml × 12瓶', price: 15, unit: '箱', emoji: '💧', bg: 'linear-gradient(145deg,#eff6ff,#93c5fd)' }
+    ]
+    function loadJson (key, fallback) {
+      try {
+        var raw = localStorage.getItem(key)
+        return raw ? JSON.parse(raw) : fallback
+      } catch (e) { return fallback }
+    }
+
+    Vue.createApp({
+      template:
+        '<div class="page">' +
+        '<van-search v-if="tab === \'home\'" v-model="keyword" placeholder="搜索商品名称" shape="round" clearable clear-trigger="always"></van-search>' +
+        '<van-nav-bar v-else :title="tab === \'cart\' ? \'购物车\' : \'我的订单\'"></van-nav-bar>' +
+        '<div class="page-body" v-if="tab === \'home\'">' +
+        '<div class="cats">' +
+        '<van-sidebar v-model="active">' +
+        '<van-sidebar-item v-for="(cat, index) in categories" :key="cat" :title="cat" @click="selectCat(index)"></van-sidebar-item>' +
+        '</van-sidebar>' +
+        '</div>' +
+        '<div class="goods">' +
+        '<van-empty v-if="!visibleGoods.length" description="暂无商品"></van-empty>' +
+        '<van-card v-for="item in visibleGoods" :key="item.id" :price="String(item.price)" :desc="item.spec + \' / \' + item.unit" :title="item.name">' +
+        '<template #thumb><div class="thumb" :style="{ background: item.bg }">{{ item.emoji }}</div></template>' +
+        '<template #footer>' +
+        '<van-stepper v-if="countOf(item.id)" :model-value="countOf(item.id)" min="0" theme="round" button-size="22" disable-input @change="function(val){ setCount(item, val) }"></van-stepper>' +
+        '<van-button v-else type="danger" size="mini" round icon="plus" @click="setCount(item, 1)"></van-button>' +
+        '</template>' +
+        '</van-card>' +
+        '</div>' +
+        '</div>' +
+        '<div class="panel" v-else-if="tab === \'cart\'">' +
+        '<van-empty v-if="!cart.length" description="购物车是空的"></van-empty>' +
+        '<van-card v-for="row in cartRows" :key="row.id" :price="String(row.price)" :desc="row.spec + \' / \' + row.unit" :title="row.name">' +
+        '<template #thumb><div class="thumb" :style="{ background: row.bg }">{{ row.emoji }}</div></template>' +
+        '<template #footer>' +
+        '<van-stepper :model-value="row.count" min="0" theme="round" button-size="22" disable-input @change="function(val){ setCount(row, val) }"></van-stepper>' +
+        '</template>' +
+        '</van-card>' +
+        '<van-submit-bar v-if="cart.length" :price="cartTotalFen" button-text="结算" @submit="checkout"></van-submit-bar>' +
+        '</div>' +
+        '<div class="panel" v-else>' +
+        '<van-empty v-if="!orders.length" description="还没有订单"></van-empty>' +
+        '<van-cell-group v-for="order in orders" :key="order.id" inset style="margin: 12px 0;">' +
+        '<van-cell :title="order.time" :value="\'¥\' + order.total"></van-cell>' +
+        '<van-cell v-for="row in order.items" :key="row.id" :title="row.name" :value="\'×\' + row.count"></van-cell>' +
+        '</van-cell-group>' +
+        '</div>' +
+        '<van-tabbar v-model="tab" active-color="#ee0a24">' +
+        '<van-tabbar-item name="home" icon="home-o">首页</van-tabbar-item>' +
+        '<van-tabbar-item name="cart" icon="cart-o" :badge="cartCount || \'\'">购物车</van-tabbar-item>' +
+        '<van-tabbar-item name="orders" icon="bill-o">我的订单</van-tabbar-item>' +
+        '</van-tabbar>' +
+        '</div>',
+      data: function () {
+        return {
+          tab: 'home',
+          keyword: '',
+          active: 0,
+          categories: ['厨卫用品', '洗漱用品', '肉类', '蔬菜', '水果', '其他'],
+          goods: GOODS,
+          cart: loadJson(STORAGE_CART, []),
+          orders: loadJson(STORAGE_ORDERS, [])
+        }
+      },
+      computed: {
+        currentCat: function () { return this.categories[this.active] },
+        visibleGoods: function () {
+          var kw = (this.keyword || '').trim()
+          var list = this.goods
+          if (kw) {
+            return list.filter(function (item) { return item.name.indexOf(kw) !== -1 })
+          }
+          var cat = this.currentCat
+          return list.filter(function (item) { return item.cat === cat })
+        },
+        cartRows: function () {
+          var map = {}
+          this.goods.forEach(function (item) { map[item.id] = item })
+          return this.cart.map(function (row) {
+            return Object.assign({}, map[row.id] || {}, { count: row.count })
+          })
+        },
+        cartCount: function () {
+          return this.cart.reduce(function (sum, row) { return sum + row.count }, 0)
+        },
+        cartTotalFen: function () {
+          var map = {}
+          this.goods.forEach(function (item) { map[item.id] = item })
+          var total = this.cart.reduce(function (sum, row) {
+            var item = map[row.id]
+            return sum + (item ? item.price * row.count : 0)
+          }, 0)
+          return Math.round(total * 100)
+        }
+      },
+      watch: {
+        keyword: function (val) {
+          var kw = (val || '').trim()
+          if (!kw) return
+          var found = this.goods.filter(function (item) { return item.name.indexOf(kw) !== -1 })
+          if (found.length) {
+            var i = this.categories.indexOf(found[0].cat)
+            if (i >= 0) this.active = i
+          }
+        }
+      },
+      methods: {
+        selectCat: function (index) {
+          this.active = index
+          this.keyword = ''
+        },
+        countOf: function (id) {
+          var found = this.cart.filter(function (row) { return row.id === id })[0]
+          return found ? found.count : 0
+        },
+        persist: function () {
+          localStorage.setItem(STORAGE_CART, JSON.stringify(this.cart))
+          localStorage.setItem(STORAGE_ORDERS, JSON.stringify(this.orders))
+        },
+        setCount: function (item, val) {
+          var count = Number(val) || 0
+          var next = this.cart.slice()
+          var i = -1
+          next.forEach(function (row, idx) { if (row.id === item.id) i = idx })
+          if (count <= 0) {
+            if (i !== -1) next.splice(i, 1)
+          } else if (i === -1) {
+            next.push({ id: item.id, count: count })
+          } else {
+            next.splice(i, 1, { id: item.id, count: count })
+          }
+          this.cart = next
+          this.persist()
+        },
+        checkout: function () {
+          if (!this.cart.length) return
+          var now = new Date()
+          var pad = function (n) { return n < 10 ? '0' + n : '' + n }
+          var time = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate()) +
+            ' ' + pad(now.getHours()) + ':' + pad(now.getMinutes())
+          var total = (this.cartTotalFen / 100).toFixed(2)
+          this.orders = [{
+            id: Date.now(),
+            time: time,
+            total: total,
+            items: this.cartRows.map(function (row) {
+              return { id: row.id, name: row.name, count: row.count }
+            })
+          }].concat(this.orders)
+          this.cart = []
+          this.persist()
+          this.tab = 'orders'
+          vant.showToast('下单成功')
+        }
+      }
+    }).use(vant).mount('#app')
+  </script>
+</body>
+
+</html>
